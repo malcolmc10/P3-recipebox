@@ -4,20 +4,28 @@
 
 ## Overview
 
-**Add Your Project Title** 
+**P3-recipebox**
 
-Add your project description.
+This is a food recipe app that allows the user to select popular dishes and follow a step by step guide to making a delicious meal.
+
 
 ### Team Members
 
-- [Bob](https://github.com/mishakessler)
-- [Jane](https://github.com/mishakessler)
-- [John](https://github.com/mishakessler)
-- [Ericka](https://github.com/mishakessler) (Team Leader) 
+- [Nikita](https://github.com/nsavelevjs)
+- [Peter](https://github.com/PolarBear97)
+- [Colin](https://github.com/malcolmc10) (Team Lead)
+- [Charaf](https://github.com/charafboulafaa) 
+- [Dan](https://github.com/dandalgatov)
 
 ### Team Expectations
 >  Review and update the original Group Expectations document that you created for the Blog App Exercise and link to it here.
 Team values and expectations can be found on our project's [Group Expectation Setting Document](https://git.generalassemb.ly/sei-nyc-neptune/ux-sei-collab-p3/blob/master/group-expectations.md).
+
+- Nikita - Weds: needs to go to appointment, gf's birthday.
+- Dan - Fri: possibly a few hours off. 
+- Peter - Sat: not available after 6.
+- Colin - I try not to look at phone after 9:30pm. willing to though. Sunday from 2-4 daddy time.
+- Charaf - Saturday morning doc appointment.
 
 <br>
 
@@ -31,11 +39,10 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Put in time on weekend to finish on time,_
+- _Get MVP done,_
+- _Work effectively as a team_
+- _Add additional functionality for general world usability_
 
 <br>
 
@@ -43,12 +50,12 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop and mobile views. Include the link(s) to the mockups from your UX team here.
+> https://www.figma.com/file/u7f4in5jrEQWcimlTGXyDH/Mobile-RecipeBox-SEI
 
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. Suggestion: Use [Whimsical](https://whimsical.com/) to create your diagram.
+> https://whimsical.com/2Jq1ZGQk1rf82w2GuGEm3F 
 
 <br>
 
@@ -56,11 +63,73 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 #### Database Schema 
 
-> Use this section to outline the schema for your database models.
+```
+ {
+    title: { type: String, required: true },
+    coverImage: { type: String, required: false },
+    servesPeople: { type: Number, required: false },
+    cookTime: { type: Number, required: false },
+    cookTimeUnit: { type: String, required: false },
+    score: { type: Number, required: false },
+    ingredients: [
+        {
+            amount: { type: Number, required: false },
+            unit: { type: String, required: false },
+            name: { type: String, required: true },
+            consistency: { type: String, required: false },
+            meta: { type: String, required: false }
+        }
+    ],
+    preparation: [
+        {
+            step: { type: Number, required: true },
+            description: { type: String, required: true },
+            stepImage: { type: String, required: false }
+        }
+    ],
+    filters: [
+        {
+            healthy: { type: Boolean, required: false },
+            seasonal: { type: Boolean, required: false },
+            min30: { type: Boolean, required: false },
+            glutenFree: { type: Boolean, required: false },
+            vegetarian: { type: Boolean, required: false },
+            breakfast: { type: Boolean, required: false },
+            lunch: { type: Boolean, required: false },
+            dinner: { type: Boolean, required: false },
+            dessert: { type: Boolean, required: false },
+            snack: { type: Boolean, required: false },
+            indian: { type: Boolean, required: false },
+            thai: { type: Boolean, required: false },
+            japanese: { type: Boolean, required: false },
+            french: { type: Boolean, required: false },
+            italian: { type: Boolean, required: false },
+            mexican: { type: Boolean, required: false },
+            american: { type: Boolean, required: false },
+            canadian: { type: Boolean, required: false },
+            korean: { type: Boolean, required: false },
+            polish: { type: Boolean, required: false }
+        }
+    ],
+    comments: [
+        {
+            commentAuthor: { type: String, required: true },
+            commentDetails: { type: String, required: true },
+            commentTime: { type: Number, required: true }
+        }
+    ]
+}
+```
 
 #### Express Routes
 
-> Use this section to anticipate the routes you need to define in your Express server.
+``` 
+router.get("/recipes", control.getRecipes);
+router.get("/recipes/:id", control.getRecipe);
+router.post("/recipes", control.createRecipe);
+router.put("/recipes/:id", control.updateRecipe);
+router.delete("/recipes/:id", control.deleteRecipe)
+```
 
 <br>
 
@@ -74,7 +143,14 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 |  React Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 |    Express     | _Lorem ipsum dolor sit amet, consectetur._ |
 | Express Router | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Cors    | _Lorem ipsum dolor sit amet, consectetur._ |
 |    Mongoose    | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Morgan    | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Body Parser    | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Nodemon    | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Tailwind    | _Lorem ipsum dolor sit amet, consectetur._ |
+
+
 
 <br>
 
