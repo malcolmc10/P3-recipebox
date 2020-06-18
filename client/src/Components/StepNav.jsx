@@ -10,38 +10,43 @@ export default class StepNav extends Component {
     }
     render() {
         return (
+            <div>
+                <nav>
+                    <div>
+                        <a href="#">
+                            <h1>Step 1 <span>{this.state.props.recipe}</span></h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <h1>Step 2 <span>{this.state.props.recipe}</span></h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <h1>Step 3 <span>{this.state.props.recipe}</span></h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <h1>Step 4 <span>{this.state.props.recipe}</span></h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <h1>Step 5 <span>{this.state.props.recipe}</span></h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/">
+                            <h1>Back to Top <span>{"/"}</span></h1>
+                        </a>
+                    </div>
 
-      <div>
-        <nav>
-          <div>
-        <a  href="#">
-            <h1>Step 1 <span>{this. state.props.recipe}</span></h1>
-          </a>
-           </div>
-           <div>
-           <a  href="#">
-            <h1>Step 2 <span>{this.state.props.recipe}</span></h1>
-          </a>
-           </div>
-           <div>
-           <a  href="#">
-            <h1>Step 3 <span>{this.state.props.recipe}</span></h1>
-          </a>
-           </div>
-           <div>
-           <a  href="#">
-            <h1>Step 4 <span>{this.state.props.recipe}</span></h1>
-          </a>
-           </div>
-           <div>
-           <a  href="#">
-            <h1>Step 5 <span>{this.state.props.recipe}</span></h1>
-          </a>
-           </div>
-          
-        </nav>
-      </div>
-        )}
+                </nav>
+            </div>
+        )
+    }
 }
 
 
@@ -70,6 +75,9 @@ export default class StepNav extends Component {
 
 
 
+<<<<<<< HEAD
+=======
 
  
+>>>>>>> 5ec0fe445a194650f81b86097b54bd33efd5ab99
 
