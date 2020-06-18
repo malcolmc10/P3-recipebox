@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 
 export default class StepNav extends Component {
@@ -74,4 +75,9 @@ export default class StepNav extends Component {
 
 
 
+<<<<<<< HEAD
+=======
+
+ 
+>>>>>>> 5ec0fe445a194650f81b86097b54bd33efd5ab99
 

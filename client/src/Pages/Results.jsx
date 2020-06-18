@@ -1,12 +1,10 @@
-import React from 'react';
-
+import React from 'react'
+// import SearchResults from '../Components/SearchResults'
 
 export default function Results() {
-
   return (
     <div>
-      results
+      Results
     </div>
-  );
-
+  )
 }
