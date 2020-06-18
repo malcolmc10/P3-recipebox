@@ -1,5 +1,8 @@
 
 import React, { Component } from "react";
+import App from "./src/App";
+import "index.css";
+
  
 class StepNav extends Component {
   render() {
