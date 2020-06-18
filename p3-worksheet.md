@@ -50,12 +50,12 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 #### Wireframes
 
-> https://www.figma.com/file/u7f4in5jrEQWcimlTGXyDH/Mobile-RecipeBox-SEI
+> https://whimsical.com/ReqgME8gdNnxjGjc2uBbaJ#2Ux7TurymMsHjScerueX
 
 
 #### Component Hierarchy
 
-> https://whimsical.com/2Jq1ZGQk1rf82w2GuGEm3F 
+> https://whimsical.com/ReqgME8gdNnxjGjc2uBbaJ#2Ux7TurymMsHjScerueX
 
 <br>
 
