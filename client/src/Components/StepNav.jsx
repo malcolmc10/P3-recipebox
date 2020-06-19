@@ -6,7 +6,8 @@ export default class StepNav extends Component {
         super(props);
         this.state = {
             recipes: recipe,
-            step : 1,
+            step : '1',
+            
             
 
         }
@@ -22,22 +23,22 @@ export default class StepNav extends Component {
                     </div>
                     <div>
                         <a href="#">
-                            <button onClick={}><h1>Step 2 </h1></button>
+                            <button onClick={this.state.}><h1>Step 2 </h1></button>
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <button onClick={}><h1>Step 3 </h1></button>
+                            <button onClick={this.state.}><h1>Step 3 </h1></button>
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <button onClick={}><h1>Step 4 </h1></button>
+                            <button onClick={this.state.}><h1>Step 4 </h1></button>
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <button onClick={}><h1>Step 5 </h1></button>
+                            <button onClick={this.state.}><h1>Step 5 </h1></button>
                         </a>
                     </div>
                     <div>
