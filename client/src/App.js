@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,8 +10,8 @@ import Results from './Pages/Results'
 import RecipeDetails from './Pages/RecipeDetails'
 
 
-
 function App() {
+
   return (
     <Router>
       <Switch>
