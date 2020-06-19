@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
+import Header from '../Shared/Header'
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
-      <div>
-        Home Page
+      <div className="container mx-auto px-4 font-serif">
+      
+        <Header />
       </div>
     );
   }
 }
 
-export default App;
+export default Home;
