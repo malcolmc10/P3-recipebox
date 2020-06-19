@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
-import { createPost } from './services/posts'
-import { useHistory } from 'react-router-dom'
+import React from 'react'
 
-export default function PostCreate() {
+
+export default function AddComment() {
   let history = useHistory();
   const [post, setPost] = useState({})
 
