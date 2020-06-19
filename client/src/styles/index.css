@@ -20,3 +20,12 @@ body::after{
     position: absolute;
     z-index: -1;
 }
+
+@responsive{
+.h-500px{
+  height:500px
+}
+.h-250px{
+  height: 250px
+}
+}
