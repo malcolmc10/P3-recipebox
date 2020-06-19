@@ -14360,6 +14360,14 @@ body::after{
   z-index: -1;
 }
 
+.h-500px{
+  height:500px
+}
+
+.h-250px{
+  height: 250px
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -28096,6 +28104,14 @@ body::after{
 
   .sm\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .sm\:h-500px{
+    height:500px
+  }
+
+  .sm\:h-250px{
+    height: 250px
   }
 }
 
@@ -41836,6 +41852,14 @@ body::after{
   .md\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .md\:h-500px{
+    height:500px
+  }
+
+  .md\:h-250px{
+    height: 250px
+  }
 }
 
 @media (min-width: 1024px) {
@@ -55575,6 +55599,14 @@ body::after{
   .lg\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .lg\:h-500px{
+    height:500px
+  }
+
+  .lg\:h-250px{
+    height: 250px
+  }
 }
 
 @media (min-width: 1280px) {
@@ -69313,5 +69345,13 @@ body::after{
 
   .xl\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .xl\:h-500px{
+    height:500px
+  }
+
+  .xl\:h-250px{
+    height: 250px
   }
 }
