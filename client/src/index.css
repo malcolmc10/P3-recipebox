@@ -14345,6 +14345,21 @@ video {
 
 /* Custom CSS */
 
+body::after{
+  content: '';
+  background-image: url('./assets/pattern_background.png');
+  background-repeat: repeat;
+  background-size: 112px 112px;
+  height: 100vh;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
