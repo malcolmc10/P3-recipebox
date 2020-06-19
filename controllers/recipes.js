@@ -61,10 +61,20 @@ const deleteRecipe = async (req, res) => {
     }
 }
 
+const filter = async (req,res)=>{
+    try{
+        const recipe = await Recipe.find()
+        return res.json(rescipe)
+    }catch(error){
+        res.status(500).json({ error: error.message })
+    }
+}
+
 module.exports = {
     createRecipe,
     getRecipes,
     getRecipe,
     updateRecipe,
-    deleteRecipe
+    deleteRecipe,
+    filter
 }

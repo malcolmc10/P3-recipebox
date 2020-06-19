@@ -1,5 +1,9 @@
-import react from './react'
+import React from 'react'
 
 export default function Comment() {
-  
+  return (
+    <div>
+      Comment
+    </div>
+  )
 }
