@@ -9,8 +9,12 @@ import Home from './Pages/Home'
 import Results from './Pages/Results'
 import RecipeDetails from './Pages/RecipeDetails'
 
+import {filter} from './Services/recipes'
+
 
 function App() {
+
+  console.log(filter())
 
   return (
     <Router>

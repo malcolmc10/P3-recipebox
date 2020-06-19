@@ -108,30 +108,29 @@ const main = async () => {
                         "stepImage": "https://imgur.com/7QIhXPs"
                     }
                 ],
-                "filters": [
+                "filters": 
                     {
-                        "healthy": "true",
-                        "seasonal": "false",
-                        "min30": "false",
-                        "glutenFree": "false",
-                        "vegetarian": "false",
-                        "breakfast": "false",
-                        "lunch": "false",
-                        "dinner": "true",
-                        "dessert": "false",
-                        "snack": "false",
-                        "indian": "false",
-                        "thai": "false",
-                        "japanese": "false",
-                        "french": "false",
-                        "italian": "false",
-                        "mexican": "false",
-                        "american": "true",
-                        "canadian": "false",
-                        "korean": "false",
-                        "polish": "false"
-                    }
-                ],
+                        "healthy": false,
+                        "seasonal": false,
+                        "min30": false,
+                        "glutenFree": false,
+                        "vegetarian": false,
+                        "breakfast": false,
+                        "lunch": false,
+                        "dinner": true,
+                        "dessert": false,
+                        "snack": false,
+                        "indian": false,
+                        "thai": false,
+                        "japanese": false,
+                        "french": false,
+                        "italian": false,
+                        "mexican": false,
+                        "american": false,
+                        "canadian": false,
+                        "korean": false,
+                        "polish": false
+                    },
                 "comments": [
                     {
                         "commentAuthor": "Dan Dalgatov",

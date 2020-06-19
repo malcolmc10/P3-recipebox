@@ -63,9 +63,19 @@ const deleteRecipe = async (req, res) => {
 
 const filter = async (req,res)=>{
     try{
-        if(req){}
+         const { filter } = (req.params)
+        const recipes = await Recipe.find()
+        const filteredRecipes = recipes.findOne({
+            filters : filter
+            
+        })
+        // console.log(filteredRecipes)
+       
 
-        return res.json(recipe)
+        //how do we pass multiple filters and how to do we filter our database by these filters
+        if(filteredRecipes){
+            res.json()
+        }
     }catch(error){
         res.status(500).json({ error: error.message })
     }
