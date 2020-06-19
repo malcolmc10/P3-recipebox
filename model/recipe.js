@@ -25,29 +25,7 @@ const Recipe = new Schema(
                 stepImage: { type: String, required: false }
             }
         ],
-        filters: 
-            {
-                healthy: { type: Boolean, required: false },
-                seasonal: { type: Boolean, required: false },
-                min30: { type: Boolean, required: false },
-                glutenFree: { type: Boolean, required: false },
-                vegetarian: { type: Boolean, required: false },
-                breakfast: { type: Boolean, required: false },
-                lunch: { type: Boolean, required: false },
-                dinner: { type: Boolean, required: false },
-                dessert: { type: Boolean, required: false },
-                snack: { type: Boolean, required: false },
-                indian: { type: Boolean, required: false },
-                thai: { type: Boolean, required: false },
-                japanese: { type: Boolean, required: false },
-                french: { type: Boolean, required: false },
-                italian: { type: Boolean, required: false },
-                mexican: { type: Boolean, required: false },
-                american: { type: Boolean, required: false },
-                canadian: { type: Boolean, required: false },
-                korean: { type: Boolean, required: false },
-                polish: { type: Boolean, required: false }
-            },
+        filters: [{ type: String, required: false }],
         comments: [
             {
                 commentAuthor: { type: String, required: true },

@@ -62,10 +62,23 @@ const deleteRecipe = async (req, res) => {
 }
 
 const filter = async (req,res)=>{
-    try{
-        const recipes = await Recipe.find()
-        const filteredRecipes = recipes.filter(recipe => recipe.filters[0].dinner === true)
-        console.log(filteredRecipes)
+    try {
+        // const { filter } = (req.body);
+        const filter = ["healthy", "dinner", "lunch", "american"]
+        const filteredRecipes = filter.map(i => await Recipe.find({ filters: [i] }))
+
+
+        
+        // await Recipe.find({ filters: ["healthy", "lunch",] })
+        
+        // db.inventory.find( { qty: { $exists: true } } )
+        // const activeAndLessThan25 = async () => {
+        //     // const activeAndLessThan25 = await User.find({ $and: [{ status: "active"}, { age: { $lt: 25 }}]})
+        //     // const activeAndLessThan25 = await User.find().and([{ status: "active" }, { age: { $lt: 25 }}])
+        //     // const activeAndLessThan25 = await User.find({status: 'active', age: { $lt: 25 }})
+        //     const activeAndLessThan25 = await User.find({ status: "active" }).where("age").lt(25)
+        //     console.log(activeAndLessThan25)
+        // }
         return res.json(filteredRecipes)
     }catch(error){
         res.status(500).json({ error: error.message })
