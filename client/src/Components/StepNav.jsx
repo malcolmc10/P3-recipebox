@@ -19,32 +19,32 @@ export default class StepNav extends Component {
                 <nav>
                     <div>
                         <a href="#">
-                            <h1>Step 1 </h1>
+                            <button onClick={}><h1>Step 1 </h1></button>
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <h1>Step 2 </h1>
+                            <button onClick={}><h1>Step 2 </h1></button>
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <h1>Step 3 </h1>
+                            <button onClick={}><h1>Step 3 </h1></button>
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <h1>Step 4 </h1>
+                            <button onClick={}><h1>Step 4 </h1></button>
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <h1>Step 5 </h1>
+                            <button onClick={}><h1>Step 5 </h1></button>
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <h1>Back to Top </h1>
+                            <button onClick={}><h1>Back to Top </h1></button>
                         </a>
                     </div>
 
