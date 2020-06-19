@@ -25,7 +25,7 @@ const Recipe = new Schema(
                 stepImage: { type: String, required: false }
             }
         ],
-        filters: [
+        filters: 
             {
                 healthy: { type: Boolean, required: false },
                 seasonal: { type: Boolean, required: false },
@@ -47,8 +47,7 @@ const Recipe = new Schema(
                 canadian: { type: Boolean, required: false },
                 korean: { type: Boolean, required: false },
                 polish: { type: Boolean, required: false }
-            }
-        ],
+            },
         comments: [
             {
                 commentAuthor: { type: String, required: true },

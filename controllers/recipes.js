@@ -63,8 +63,10 @@ const deleteRecipe = async (req, res) => {
 
 const filter = async (req,res)=>{
     try{
-        const recipe = await Recipe.find()
-        return res.json(rescipe)
+        const recipes = await Recipe.find()
+        const filteredRecipes = recipes.filter(recipe => recipe.filters[0].dinner === true)
+        console.log(filteredRecipes)
+        return res.json(filteredRecipes)
     }catch(error){
         res.status(500).json({ error: error.message })
     }
