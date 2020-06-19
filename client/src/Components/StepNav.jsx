@@ -3,55 +3,53 @@ import React, { Component } from 'react'
 
 
 export default class StepNav extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            recipes: recipe,
-            step : 1,
-            
-            
-
-        }
+  constructor(props) {
+    super(props);
+    this.state = {
+      recipes: {},
+      step: 1
     }
-    render() {
-        return (
-            <div>
-                <nav>
-                    <div>
-                        <a href="#">
-                            <button onClick={this.state.step}><h1>Step 1 </h1></button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <button onClick={this.}><h1>Step 2 </h1></button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <button onClick={this.}><h1>Step 3 </h1></button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <button onClick={this.}><h1>Step 4 </h1></button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <button onClick={this.}><h1>Step 5 </h1></button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <button onClick={"#"}><h1>Back to Top </h1></button>
-                        </a>
-                    </div>
+  }
 
-                </nav>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <nav>
+          <div>
+            <a href="#">
+              <button onClick={this.state.step}><h1>Step 1 </h1></button>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <button><h1>Step 2 </h1></button>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <button><h1>Step 3 </h1></button>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <button><h1>Step 4 </h1></button>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <button><h1>Step 5 </h1></button>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <button><h1>Back to Top </h1></button>
+            </a>
+          </div>
+
+        </nav>
+      </div>
+    )
+  }
 }
 
 
