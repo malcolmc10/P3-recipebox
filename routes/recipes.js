@@ -3,10 +3,8 @@ const control = require("../controllers/recipes");
 
 const router = Router()
 
-
-
 router.get("/recipes", control.getRecipes);
-router.get("/recipes/filtered", control.filter); // Change this as recipes come along and fix controller for it as well YAS!!!!!
+router.get("/recipes/filter", control.filter); 
 router.get("/recipes/:id", control.getRecipe);
 router.post("/recipes", control.createRecipe);
 router.put("/recipes/:id", control.updateRecipe);

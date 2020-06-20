@@ -45,9 +45,9 @@ export const deleteRecipe = async id => {
     }
 }
 
-export const filter = async () => {
+export const filter = async (filter) => {
     try {
-        const response = await api.get('/recipes/filtered')
+        const response = await api.get('/recipes/filtered', filter)
         return response.data
     } catch (error) {
         throw error
