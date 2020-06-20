@@ -149,6 +149,7 @@ router.delete("/recipes/:id", control.deleteRecipe)
 |    Body Parser    | _Lorem ipsum dolor sit amet, consectetur._ |
 |    Nodemon    | _Lorem ipsum dolor sit amet, consectetur._ |
 |    Tailwind    | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Axios    | _Lorem ipsum dolor sit amet, consectetur._ |
 
 
 
