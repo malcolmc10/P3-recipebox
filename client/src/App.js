@@ -9,8 +9,8 @@ import Home from './Pages/Home'
 import Results from './Pages/Results'
 import RecipeDetails from './Pages/RecipeDetails'
 
-
 function App() {
+
 
   return (
     <Router>

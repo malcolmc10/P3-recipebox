@@ -44,3 +44,12 @@ export const deleteRecipe = async id => {
         throw error
     }
 }
+
+export const filter = async (filter) => {
+    try {
+        const response = await api.get('/recipes/filtered', filter)
+        return response.data
+    } catch (error) {
+        throw error
+    }
+}
