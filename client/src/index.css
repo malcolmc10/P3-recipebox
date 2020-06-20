@@ -14345,6 +14345,29 @@ video {
 
 /* Custom CSS */
 
+body::after{
+  content: '';
+  background-image: url('./assets/pattern_background.png');
+  background-repeat: repeat;
+  background-size: 112px 112px;
+  height: 100vh;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.h-500px{
+  height:500px
+}
+
+.h-250px{
+  height: 250px
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -28081,6 +28104,14 @@ video {
 
   .sm\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .sm\:h-500px{
+    height:500px
+  }
+
+  .sm\:h-250px{
+    height: 250px
   }
 }
 
@@ -41821,6 +41852,14 @@ video {
   .md\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .md\:h-500px{
+    height:500px
+  }
+
+  .md\:h-250px{
+    height: 250px
+  }
 }
 
 @media (min-width: 1024px) {
@@ -55560,6 +55599,14 @@ video {
   .lg\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .lg\:h-500px{
+    height:500px
+  }
+
+  .lg\:h-250px{
+    height: 250px
+  }
 }
 
 @media (min-width: 1280px) {
@@ -69298,5 +69345,13 @@ video {
 
   .xl\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .xl\:h-500px{
+    height:500px
+  }
+
+  .xl\:h-250px{
+    height: 250px
   }
 }
