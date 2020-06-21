@@ -11,8 +11,6 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  scroll-behavior: smooth;
-  
 }
 
 /* Sections
@@ -23,7 +21,6 @@ html {
  */
 
 body {
-  position: relative;
   margin: 0;
 }
 
@@ -14353,6 +14350,7 @@ body::after{
   background-image: url('./assets/pattern_background.png');
   background-repeat: repeat;
   background-size: 112px 112px;
+  height: 100vh;
   opacity: 0.3;
   top: 0;
   left: 0;
