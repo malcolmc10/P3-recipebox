@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { getRecipe } from '../Services/recipes'
 import { useHistory } from 'react-router-dom'
 
 
-export default function AddComment() {
+export default function AddComment(props) {
+
+  const { setRecipe } = props
+
   let history = useHistory();
-  const [recipe, setRecipe] = useState({})
-  // useEffect(() => {
-  //   (
-  //     async () => setRecipe(await getRecipe(id.params))
-  //   )()
-  // }, [])
+
 
   const handleChange = (event) => {
     const { name, value } = event.target
