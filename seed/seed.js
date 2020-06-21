@@ -6,7 +6,7 @@ const main = async () => {
   const recipes = [
     {
       title: "Fennel and Chicken Stew",
-      coverImage: "https://imgur.com/3znSL1M",
+      coverImage: "https://i.imgur.com/3znSL1M.png",
       servesPeople: 4,
       cookTime: 1,
       cookTimeUnit: "Hour",
@@ -94,19 +94,19 @@ const main = async () => {
           step: 1,
           description:
             "Sauté the olive oil, garlic, and onion over medium heat in a large nonstick stockpot.",
-          stepImage: "https://imgur.com/mVgiec0",
+          stepImage: "https://i.imgur.com/mVgiec0.png",
         },
         {
           step: 2,
           description:
             "Add the celery and fennel and sauté briefly, then add the tomatoes.",
-          stepImage: "https://imgur.com/J6UU6Yw",
+          stepImage: "https://i.imgur.com/J6UU6Yw.png",
         },
         {
           step: 3,
           description:
             "Add the broth, chicken, potatoes, and seasonings. Cook at a simmer over medium heat until the chicken is done and the potatoes are tender, about 20-25 minutes.",
-          stepImage: "https://imgur.com/7QIhXPs",
+          stepImage: "https://i.imgur.com/7QIhXPs.png",
         },
       ],
       filters: {
@@ -141,7 +141,7 @@ const main = async () => {
     },
     {
       title: "Rice",
-      coverImage: "https://imgur.com/3znSL1M",
+      coverImage: "https://i.imgur.com/3znSL1M.png",
       servesPeople: 4,
       cookTime: 1,
       cookTimeUnit: "Hour",
@@ -229,19 +229,19 @@ const main = async () => {
           step: 1,
           description:
             "Sauté the olive oil, garlic, and onion over medium heat in a large nonstick stockpot.",
-          stepImage: "https://imgur.com/mVgiec0",
+          stepImage: "https://i.imgur.com/mVgiec0.png",
         },
         {
           step: 2,
           description:
             "Add the celery and fennel and sauté briefly, then add the tomatoes.",
-          stepImage: "https://imgur.com/J6UU6Yw",
+          stepImage: "https://i.imgur.com/J6UU6Yw.png",
         },
         {
           step: 3,
           description:
             "Add the broth, chicken, potatoes, and seasonings. Cook at a simmer over medium heat until the chicken is done and the potatoes are tender, about 20-25 minutes.",
-          stepImage: "https://imgur.com/7QIhXPs",
+          stepImage: "https://i.imgur.com/7QIhXPs.png",
         },
       ],
       filters: {
