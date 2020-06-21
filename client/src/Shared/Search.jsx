@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SearchBar from './SearchBar'
+import FilterMenu from './FilterMenu'
 
 export default function Search() {
-  return (
-    <div className="flex justify-evenly">
-      <div className="text-2xl italic" style={{ color: '#6f6464' }}>
-        <a href="#">Filter</a>
-      </div>
 
-      <SearchBar />
-    </div>
+  const [showFilterMenu, setShowFilterMenu] = useState(false)
+
+  return (
+    <>
+      <div className="flex justify-evenly pb-4">
+        <div className="text-xl sm:text-2xl italic" style={{ color: '#6f6464' }}>
+          <a
+            href="#"
+            onClick={() => setShowFilterMenu(val => !val)}>
+            Filter
+          </a>
+        </div>
+
+        <SearchBar />
+      </div>
+      <div>
+        {showFilterMenu ? <FilterMenu /> : ''}
+      </div>
+    </>
   )
 }

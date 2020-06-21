@@ -14368,6 +14368,30 @@ body::after{
   height: 250px
 }
 
+/* Filter Menu */
+
+.filter-headline{
+  position: relative;
+}
+
+.filter-headline::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #65BCCF;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 639px) {
+  .filter-headline::after{
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
