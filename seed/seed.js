@@ -12,77 +12,88 @@ const main = async () => {
       cookTimeUnit: "Hour",
       ingredients: [
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "tsp",
           name: "olive oil",
           consistency: "",
           meta: "",
         },
         {
-          amount: 3,
+          amountNum: 3,
+          amountDen:1,
           unit: "clove",
           name: "garlic",
           consistency: "minced",
           meta: "",
         },
         {
-          amount: 0.5,
+          amountNum: 1,
+          amountDen:2,
           unit: "cup",
           name: "onions",
           consistency: "diced",
           meta: "",
         },
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "cup",
           name: "celery",
           consistency: "diced",
           meta: "",
         },
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "tsp",
           name: "fennel seeds",
           consistency: "ground",
           meta: "",
         },
         {
-          amount: 3,
+          amountNum: 3,
+          amountDen:1,
           unit: "",
           name: "plum tomatoes",
           consistency: "diced",
           meta: "",
         },
         {
-          amount: 4,
+          amountNum: 4,
+          amountDen:1,
           unit: "cup",
           name: "chicken broth",
           consistency: "",
           meta: "",
         },
         {
-          amount: 2,
+          amountNum: 2,
+          amountDen:1,
           unit: "",
           name: "chicken breasts",
           consistency: "diced",
           meta: "",
         },
         {
-          amount: 2,
+          amountNum: 2,
+          amountDen:1,
           unit: "",
           name: "potatoes",
           consistency: "",
           meta: "",
         },
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "pinch",
           name: "garlic powder",
           consistency: "",
           meta: "",
         },
         {
-          amount: null,
+          amountNum: null,
+          amountDen:0,
           unit: "",
           name: "black pepper",
           consistency: "",
@@ -147,49 +158,56 @@ const main = async () => {
       cookTimeUnit: "Hour",
       ingredients: [
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "tsp",
           name: "olive oil",
           consistency: "",
           meta: "for frying",
         },
         {
-          amount: 3,
+          amountNum: 3,
+          amountDen:1,
           unit: "clove",
           name: "garlic",
           consistency: "minced",
           meta: "",
         },
         {
-          amount: 0.5,
+          amountNum: 0.5,
+          amountDen:1,
           unit: "cup",
           name: "onions",
           consistency: "diced",
           meta: "",
         },
         {
-          amount: 2,
+          amountNum: 2,
+          amountDen:1,
           unit: "tbs",
           name: "flour",
           consistency: "",
           meta: "",
         },
         {
-          amount: 0.25,
+          amountNum: 1,
+          amountDen:4,
           unit: "cup",
           name: "mozzarella cheese",
           consistency: "small cubes",
           meta: "",
         },
         {
-          amount: 0.25,
+          amountNum: 1,
+          amountDen:4,
           unit: "cup",
           name: "Fresh Basil",
           consistency: "chopped",
           meta: "",
         },
         {
-          amount: 0.5,
+          amountNum: 1,
+          amountDen:2,
           unit: "cup",
           name: "provolone cheese",
           consistency: "grated",
@@ -197,42 +215,48 @@ const main = async () => {
         },
 
         {
-          amount: 0.5,
+          amountNum: 1,
+          amountDen:2,
           unit: "cup",
           name: "tomato sauce",
           consistency: "",
           meta: "",
         },
         {
-          amount: 4,
+          amountNum: 4,
+          amountDen:1,
           unit: "",
           name: "chicken breasts",
           consistency: "diced",
           meta: "",
         },
         {
-          amount: 2,
+          amountNum: 2,
+          amountDen:1,
           unit: "",
           name: "eggs",
           consistency: "",
           meta: "",
         },
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "cup",
           name: "panko",
           consistency: "",
           meta: "",
         },
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "pinch",
           name: "salt",
           consistency: "",
           meta: "",
         },
         {
-          amount: null,
+          amountNum: null,
+          amountDen:0,
           unit: "",
           name: "black pepper",
           consistency: "",
@@ -255,7 +279,7 @@ const main = async () => {
         {
           step: 3,
           description:
-            "Heat 1 cup olive oil in a large skillet on medium-high heat until it begins to shimmer. Cook chicken until golden, about 2 minutes on each side. The chicken will finish cooking in the oven. Place chicken in a baking dish and top each breast with about 1/3 cup of tomato sauce. Layer each chicken breast with equal amounts of mozzarella cheese, fresh basil, and provolone cheese. Sprinkle 1 to 2 tablespoons of Parmesan cheese on top and drizzle with 1 tablespoon olive oil. Bake in the preheated oven until cheese is browned and bubbly, and chicken breasts are no longer pink in the center, 15 to 20 minutes. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).",
+            "Heat 1 cup olive oil in a large skillet on medium-high heat until it begins to shimmer. Cook chicken until golden, about 2 minutes on each side. The chicken will finish cooking in the oven. Place chicken in a baking dish and top each breast with about 1/3 cup of tomato sauce. Layer each chicken breast with equal amount of mozzarella cheese, fresh basil, and provolone cheese. Sprinkle 1 to 2 tablespoons of Parmesan cheese on top and drizzle with 1 tablespoon olive oil. Bake in the preheated oven until cheese is browned and bubbly, and chicken breasts are no longer pink in the center, 15 to 20 minutes. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).",
           stepImage: "https://imgur.com/7QIhXPs",
         },
       ],
@@ -297,63 +321,72 @@ const main = async () => {
       cookTimeUnit: "Minutes",
       ingredients: [
         {
-          amount: 2,
+          amountNum: 2,
+          amountDen:1,
           unit: "Tbsp",
           name: "olive oil",
           consistency: "",
           meta: ""
         },
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "clove",
           name: "garlic",
           consistency: "minced",
           meta: ""
         },
         {
-          amount: 0.5,
+          amountNum: 1,
+          amountDen:2,
           unit: "",
           name: "green bell pepper or 1 jalapeno",
           consistency: "seeded and finely diced",
           meta: ""
         },
         {
-          amount: 2,
+          amountNum: 2,
+          amountDen:1,
           unit: "",
           name: "green onions or a handful of cilantro",
           consistency: "roughly chopped",
           meta: ""
         },
         {
-          amount: 1.5,
+          amountNum: 1.5,
+          amountDen:1,
           unit: "cups",
           name: "Tomato sauce",
           consistency: "",
           meta: "(or canned diced tomatoes if you want chunky tomato pieces in the rice)"
         },
         {
-          amount: 3,
+          amountNum: 3,
+          amountDen:1,
           unit: "cups",
           name: "chicken broth/stock",
           consistency: "",
           meta: ""
         },
         {
-          amount: 1,
+          amountNum: 1,
+          amountDen:1,
           unit: "tsp",
           name: "salt",
           consistency: "",
           meta: "(or according to taste if the chicken broth is salty)"
         },
         {
-          amount: 1/3,
+          amountNum: 1,
+          amountDen:3,
           unit: "tsp",
           name: "black pepper",
           consistency: "ground",
           meta: ""
         },
         {
-          amount: .5,
+          amountNum: 1,
+          amountDen:1,
           unit: "tsp",
           name: "oregano",
           consistency: "dried",
@@ -411,6 +444,21 @@ const main = async () => {
       ],
     },
   ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   await Recipe.insertMany(recipes);
   console.log("Created recipes!");
 };
