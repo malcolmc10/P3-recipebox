@@ -10,7 +10,8 @@ const Recipe = new Schema(
     score: { type: Number, required: false },
     ingredients: [
       {
-        amount: { type: Number, required: false },
+        amountNum: { type: Number, required: false },
+        amountDen: { type: Number,required: false },
         unit: { type: String, required: false },
         name: { type: String, required: true },
         consistency: { type: String, required: false },
