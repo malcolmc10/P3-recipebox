@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>
-      <p>recipebox Copyright © 2020 </p>
+    <div class="text-center">
+      <p>RecipeBox Copyright © 2020 </p>
     </div>
   )
 }

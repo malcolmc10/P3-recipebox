@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,7 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/results/:filter" component={Results} />
-        <Route exact path="/recipe/:id" component={RecipeDetails} />
+        <Route path="/recipe/:id" component={RecipeDetails} />
       </Switch>
     </Router>
   );

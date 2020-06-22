@@ -1,65 +1,54 @@
-
-import React, { Component } from 'react'
-
-
-export default class StepNav extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      recipes: {},
-      step: 1
-    }
-  }
-
-  render() {
-    return (
-      <nav>
-        Step
-
-        {/* <aside class="xl:w-40 xl:sticky w-full h-64 overflow-hidden shadow-lg rounded mr-4 mb-4 xl:mb-0 " style={{ top: '10px' }}></aside> */}
+import React from 'react'
+import ArrowUp from '../assets/zondicons/arrow-thin-up.svg'
 
 
-        <a href="#step-1">
-          <div class="h-40 w-full border-2 border-gray-400 m-1 align-bottom py-16">
-            <h1>1</h1>
-          </div>
-        </a>
+export default function StepNav() {
+  return (
+    <nav class="text-gray-400 text-center text-xl sm:text-sm md:text-base lg:text-lg xl:text-2xl">
 
+      Step
 
-        <a href="#step-2">
-          <div class="h-40 w-full border-2 border-gray-400 m-1 py-16">
-            2
-          </div>
-        </a>
-
-
-
-        <a href="#step-3">
-          <div class="h-40 w-full border-2 border-gray-400 m-1 py-16">
-            3
+      <a href="#step-1">
+      <div class="relative pb-1/1 border-2 border-gray-400 mt-1 ">
+        <div class="absolute h-full w-full flex">
+            <h1 class="m-auto">1</h1>
         </div>
-        </a>
+          </div>
+      </a>
 
 
-
-        <a href="#">
-        <div class="h-40 w-full border-2 border-gray-400 m-1 py-2">
-            Back<br />to<br />Top
+      <a href="#step-2">
+      <div class="relative pb-1/1 border-2 border-gray-400 mt-1 ">
+        <div class="absolute h-full w-full flex">
+            <h1 class="m-auto">2</h1>
         </div>
-        </a>
+          </div>
+      </a>
 
-      </nav>
-    )
-  }
+
+
+      <a href="#step-3">
+      <div class="relative pb-1/1 border-2 border-gray-400 mt-1 ">
+        <div class="absolute h-full w-full flex">
+            <h1 class="m-auto">3</h1>
+        </div>
+          </div>
+      </a>
+
+
+      <a href="#header">
+      <div class="relative pb-1/1 border-2 border-gray-400 mt-1 ">
+          <div class="absolute h-full w-full flex">
+          <img class="absolute w-full pt-3 h-1/3 m-auto" src={ArrowUp} alt="arrow up" />
+            <h1 class="absolute w-full pb-3 bottom-0 m-auto leading-none">Back<br />to Top</h1>
+        </div>
+          </div>
+      </a>
+
+
+    </nav>
+  )
 }
-
-
-    // Going to use an onClick function for each of the buttons. 
-    // Starting the build out the onClick functions to jump on the page. 
-    // will need logic to have steps disappear when the steps are not needed.
-    // Thinking about adding react smooth-scroll
-    //  
-
 
 
 
