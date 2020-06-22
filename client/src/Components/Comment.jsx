@@ -1,19 +1,18 @@
 import React from 'react'
 
+
 export default function Comment(props) {
-  // const {comments} = props
+  const { commentAuthor, commentDetails } = props.comment
+
+
+
   return (
     <div>
-      <h3 class="text-2xl text-bold mb-5">Comments</h3>
-      <div>
-        comment
-        comment
-        comment
-        comment
-        comment
-        comment
-        comment
-       </div>
+
+      <h4>{commentAuthor}</h4>
+      <p>{commentDetails}</p>
     </div>
   )
+
+
 }

@@ -9,9 +9,10 @@ export default function Comments(props) {
     return (
       <>
         <div class="content-center">
-
-          <Comment comments= {comments}/>
-          <AddComment setRecipe= {setRecipe}/>
+          {comments && comments.map(comment =>
+            <Comment comment={comment} />
+          )}
+          <AddComment setRecipe={setRecipe} />
         </div>
       </>
     )

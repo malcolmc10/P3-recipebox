@@ -16,7 +16,6 @@ export default function StepNav() {
           </div>
       </a>
 
-
       <a href="#step-2">
       <div class="relative pb-1/1 border-2 border-gray-400 mt-1 ">
         <div class="absolute h-full w-full flex">
