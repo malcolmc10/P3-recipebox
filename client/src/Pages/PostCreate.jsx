@@ -1,10 +1,10 @@
 import React from 'react'
-import Layout from ''
+
 
 export default function PostCreate() {
   return (
     <>
-      <Layout showButton={false}>
+      
 
       <div className="my-5 mx-auto max-w-xl">
         <h1 className="text-3xl text-bold text-gray-400 mb-5">Add Your Recipe Here</h1>
@@ -32,7 +32,7 @@ export default function PostCreate() {
         </form>
 
         </div>
-        </Layout>
+        
     </>
   )
 }
