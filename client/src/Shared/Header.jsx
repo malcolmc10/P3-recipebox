@@ -10,45 +10,45 @@ export default function Header() {
   const [showSearch, setShowSearch] = useState(false)
 
   return (
-    <div>
+    <div id="header">
       <ul className="flex sm:justify-evenly items-center py-4 text-xl text-gray-600 justify-between">
         <li className="sm:hidden">
-          <a href="#" >
-            <img src={hamburgerIcon} className="w-4" />
+          <a href="/" >
+            <img src={hamburgerIcon} alt="hamburger icon" className="w-4" />
           </a>
         </li>
 
         <li className="hidden sm:block">
-          <a href="#" className="text-orange-500">My RecipeBox</a>
+          <a href="/" className="text-orange-500">My RecipeBox</a>
         </li>
         <li className="hidden sm:block">
-          <a href="#">Recipes</a>
+          <a href="/">Recipes</a>
         </li>
 
         <li className="hidden sm:block">
-          <a href="#">Store</a>
+          <a href="/">Store</a>
         </li>
 
         <li>
-          <a href="#"><img src={logo} className="w-16" />
+          <a href="/"><img src={logo} alt="logo" className="w-16" />
           </a>
         </li>
 
         <li className="hidden sm:block">
-          <a href="#">About</a>
+          <a href="/">About</a>
         </li>
 
         <li className="hidden sm:block">
-          <a href="#">Subscribe</a>
+          <a href="/">Subscribe</a>
         </li>
 
         <li className="hidden sm:block">
-          <a href="#" className="text-orange-500">Log In</a>
+          <a href="/" className="text-orange-500">Log In</a>
         </li>
 
         <li>
-          <a href="#" onClick={() => setShowSearch(showSearch => !showSearch)}>
-            <img src={showSearch ? closeIcon : searchIcon} className="w-4" />
+          <a href="#header" onClick={() => setShowSearch(showSearch => !showSearch)}>
+            <img src={showSearch ? closeIcon : searchIcon} alt="search icon" class="w-4" />
           </a>
         </li>
 
