@@ -81,6 +81,19 @@ const filter = async (req, res) => {
   }
 };
 
+const updateComments = async (req, res) => {
+  try {
+    const newComment = req.body
+    const { id } = req.params;
+    const recipe = await Recipe.findByIdAndUpdate(
+      id, { $push: { comments: newComment } }, { new: true }
+    )
+    return res.json(recipe)
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
 module.exports = {
   createRecipe,
   getRecipes,
@@ -88,4 +101,5 @@ module.exports = {
   updateRecipe,
   deleteRecipe,
   filter,
+  updateComments,
 };

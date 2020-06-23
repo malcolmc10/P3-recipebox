@@ -4,10 +4,11 @@ const control = require("../controllers/recipes");
 const router = Router()
 
 router.get("/recipes", control.getRecipes);
-router.get("/recipes/filter", control.filter); 
+router.get("/recipes/filter", control.filter);
 router.get("/recipes/:id", control.getRecipe);
 router.post("/recipes", control.createRecipe);
 router.put("/recipes/:id", control.updateRecipe);
 router.delete("/recipes/:id", control.deleteRecipe);
+router.put("/recipes/:id/comments", control.updateComments)
 
 module.exports = router;
