@@ -1,5 +1,6 @@
 import React from 'react'
-import ArrowUp from '../assets/zondicons/arrow-thin-up.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function StepNav() {
@@ -15,7 +16,6 @@ export default function StepNav() {
         </div>
           </div>
       </a>
-
 
       <a href="#step-2">
       <div class="relative pb-1/1 border-2 border-gray-400 mt-1 ">
@@ -38,9 +38,9 @@ export default function StepNav() {
 
       <a href="#header">
       <div class="relative pb-1/1 border-2 border-gray-400 mt-1 ">
-          <div class="absolute h-full w-full flex">
-          <img class="absolute w-full pt-3 h-1/3 m-auto" src={ArrowUp} alt="arrow up" />
-            <h1 class="absolute w-full pb-3 bottom-0 m-auto leading-none">Back<br />to Top</h1>
+          <div class="absolute h-full w-full flex flex-col">
+            <FontAwesomeIcon icon={faArrowUp} className="  h-1/3 m-auto"/>
+            <h1 class=" text-base sm:text-base lg:text-xl m-auto leading-none">Back<br />to Top</h1>
         </div>
           </div>
       </a>

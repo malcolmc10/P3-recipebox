@@ -8,6 +8,7 @@ import {
 import Home from './Pages/Home'
 import Results from './Pages/Results'
 import RecipeDetails from './Pages/RecipeDetails'
+import AddRecipe from './Pages/AddRecipe'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/results/:filter" component={Results} />
         <Route path="/recipe/:id" component={RecipeDetails} />
+        <Route exact path="/addrecipe" component={AddRecipe} />
       </Switch>
     </Router>
   );
