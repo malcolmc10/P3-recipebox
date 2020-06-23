@@ -94,6 +94,19 @@ const updateComments = async (req, res) => {
   }
 }
 
+const deleteComment = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleted = await Recipe.comments.findByIdAndDelete(id);
+    if (deleted) {
+      return res.status(200).send("Comment deleted");
+    }
+    throw new Error("Comment not found");
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 module.exports = {
   createRecipe,
   getRecipes,
@@ -102,4 +115,5 @@ module.exports = {
   deleteRecipe,
   filter,
   updateComments,
+  deleteComment
 };

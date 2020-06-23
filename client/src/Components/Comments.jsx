@@ -4,15 +4,15 @@ import AddComment from './AddComment';
 
 export default function Comments(props) {
 
-  const { comments, setRecipe, id } = props
+  const { recipe, setRecipe, id } = props
 
   return (
     <>
       <div class="content-center">
-        {comments && comments.map(comment =>
-          <Comment comment={comment} />
+        {recipe.comments && recipe.comments.map((comment, index) =>
+          <Comment recipe={recipe} setRecipe={setRecipe} comment={comment} index={index}/>
         )}
-        <AddComment setRecipe={setRecipe} id={id} />
+        <AddComment recipe={recipe} setRecipe={setRecipe} id={id} />
       </div>
     </>
   )

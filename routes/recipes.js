@@ -10,5 +10,6 @@ router.post("/recipes", control.createRecipe);
 router.put("/recipes/:id", control.updateRecipe);
 router.delete("/recipes/:id", control.deleteRecipe);
 router.put("/recipes/:id/comments", control.updateComments)
+router.delete("/comments/:id", control.deleteComment);
 
 module.exports = router;

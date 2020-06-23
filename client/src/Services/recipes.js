@@ -62,3 +62,12 @@ export const addCommentAPI = async (id, comment) => {
     throw error
   }
 }
+
+export const deleteCommentAPI = async id => {
+  try {
+    const response = await api.delete(`/comments/${id}`)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
