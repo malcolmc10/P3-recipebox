@@ -59,7 +59,7 @@ export default function RecipeDetails() {
 
           <h4 className="text-xl text-bold mt-5  ">Ingredients</h4>
           {ingredients && ingredients.map((ingredient, index) =>
-            <Ingredient amount={ingredient.amount} unit={ingredient.unit} consistency={ingredient.consistency} name={ingredient.name} meta={ingredient.meta} key={index} />
+            <Ingredient amountNum={ingredient.amountNum} amountDen={ingredient.amountDen} unit={ingredient.unit} consistency={ingredient.consistency} name={ingredient.name} meta={ingredient.meta} key={index} />
           )}
 
           {preparation && preparation.map((step, index) =>
