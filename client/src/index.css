@@ -14867,6 +14867,11 @@ body::after{
   height: 250px
 }
 
+.mx-4-perc{
+  margin-right: 4%;
+  margin-left: 4%
+}
+
 /* Filter Menu */
 
 .filter-headline{
@@ -29135,6 +29140,11 @@ body::after{
   .sm\:h-250px{
     height: 250px
   }
+
+  .sm\:mx-4-perc{
+    margin-right: 4%;
+    margin-left: 4%
+  }
 }
 
 @media (min-width: 768px) {
@@ -43380,6 +43390,11 @@ body::after{
 
   .md\:h-250px{
     height: 250px
+  }
+
+  .md\:mx-4-perc{
+    margin-right: 4%;
+    margin-left: 4%
   }
 }
 
@@ -57627,6 +57642,11 @@ body::after{
   .lg\:h-250px{
     height: 250px
   }
+
+  .lg\:mx-4-perc{
+    margin-right: 4%;
+    margin-left: 4%
+  }
 }
 
 @media (min-width: 1280px) {
@@ -71872,5 +71892,10 @@ body::after{
 
   .xl\:h-250px{
     height: 250px
+  }
+
+  .xl\:mx-4-perc{
+    margin-right: 4%;
+    margin-left: 4%
   }
 }
