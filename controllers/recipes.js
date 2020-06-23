@@ -93,7 +93,19 @@ const updateComments = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 }
-
+const deleteComment = async (req, res) => {
+  try {
+    const { id, recipeId } = req.params;
+    const recipe = await Recipe.findById(recipeId);
+    recipe.comments.id(id).remove()
+    recipe.save()
+      return res.status(200).json(recipe.comments);
+    
+   
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
 module.exports = {
   createRecipe,
   getRecipes,
@@ -102,4 +114,5 @@ module.exports = {
   deleteRecipe,
   filter,
   updateComments,
+  deleteComment
 };
