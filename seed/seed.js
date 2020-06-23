@@ -689,8 +689,7 @@ const main = async () => {
 
     {
       title: "Focaccia bread",
-      coverImage:
-        "https://www.gimmesomeoven.com/wp-content/uploads/2017/03/Rosemary-Focaccia-Bread-Recipe-1-2-1100x1650.jpg",
+      coverImage:"https://www.gimmesomeoven.com/wp-content/uploads/2017/03/Rosemary-Focaccia-Bread-Recipe-1-2-1100x1650.jpg",  
       servesPeople: 6,
       cookTime: 25,
       cookTimeUnit: "Minutes",
@@ -2356,14 +2355,7 @@ const main = async () => {
          consistency: "",
          meta: "",
        },
-       {
-         amountNum: 1,
-         amountDen: 2,
-         unit: "tsp",
-         name: "",
-         consistency: "",
-         meta: "for sauce",
-       },
+       
      ],
      preparation: [
        {
@@ -2592,9 +2584,9 @@ const main = async () => {
          commentTime: "1592459790537",
        },
      ],
-   }
+   },
 
-  ],
+  ]
   await Recipe.insertMany(recipes);
   console.log("Created recipes!");
 };
