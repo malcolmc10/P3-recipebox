@@ -2592,9 +2592,9 @@ const main = async () => {
          commentTime: "1592459790537",
        },
      ],
-   }
+   },
 
-  ],
+  ]
   await Recipe.insertMany(recipes);
   console.log("Created recipes!");
 };
