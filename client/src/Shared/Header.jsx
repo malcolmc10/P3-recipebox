@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo_with_text.png'
+import logo from '../assets/logo.png'
 import searchIcon from '../assets/zondicons/search.svg'
 import hamburgerIcon from '../assets/zondicons/menu.svg'
 import closeIcon from '../assets/zondicons/close.svg'

@@ -28,6 +28,11 @@ body::after{
 .h-250px{
   height: 250px
 }
+.mx-4-perc{
+  margin-right: 4%;
+  margin-left: 4%
+
+}
 }
 
 /* Filter Menu */
