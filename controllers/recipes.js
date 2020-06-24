@@ -81,31 +81,45 @@ const filter = async (req, res) => {
   }
 };
 
-const updateComments = async (req, res) => {
+const addComment = async (req, res) => {
   try {
-    const newComment = req.body
-    const { id } = req.params;
-    const recipe = await Recipe.findByIdAndUpdate(
-      id, { $push: { comments: newComment } }, { new: true }
-    )
-    return res.json(recipe)
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-}
-const deleteComment = async (req, res) => {
-  try {
-    const { id, recipeId } = req.params;
-    const recipe = await Recipe.findById(recipeId);
-    recipe.comments.id(id).remove()
-    recipe.save()
-      return res.status(200).json(recipe.comments);
-    
-   
+    const { id, comment } = req.params;
+    const recipe = await Recipe.findById(id);
+    recipe.comments.push(comment)
+    await recipe.save();
+    res.status(201).json(recipe);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 };
+
+const updateComment = async (req, res) => {
+    try {
+      const comment = req.body
+      const { id, recipeId } = req.params;
+      const recipe = await Recipe.findById(recipeId)
+      recipe.comments.id(id) = comment
+      await recipe.save()
+      return res.json(recipe)
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+
+const deleteComment = async (req, res) => {
+    try {
+      const { id, recipeId } = req.params;
+      const recipe = await Recipe.findById(recipeId);
+      recipe.comments.id(id).remove()
+      recipe.save()
+        return res.status(200).json(recipe.comments);
+      
+      
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  };
+
 module.exports = {
   createRecipe,
   getRecipes,
@@ -113,6 +127,7 @@ module.exports = {
   updateRecipe,
   deleteRecipe,
   filter,
-  updateComments,
+  addComment,
+  updateComment,
   deleteComment
 };

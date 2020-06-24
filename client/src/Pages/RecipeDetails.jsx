@@ -33,6 +33,8 @@ export default function RecipeDetails() {
     ingredients,
     preparation,
     comments } = recipe
+  
+
 
 
   return (
@@ -70,8 +72,8 @@ export default function RecipeDetails() {
 
 
           <h3 class=" mb-5">You're Finished!</h3>
-          <div class="xl:w-3/4">
-            <Comments comments={comments} setRecipe={setRecipe} id={id} />
+          <div>
+            <Comments recipe={recipe} setRecipe={setRecipe} id={id} />
           </div>
 
         </div>
