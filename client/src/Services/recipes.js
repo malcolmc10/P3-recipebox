@@ -57,6 +57,8 @@ export const filter = async (filter) => {
 export const addComment = async (id, comment) => {
   try {
     const response = await api.post(`/recipes/${id}/comments`, comment)
+    console.log(id, comment)
+    console.log(response.data)
     return response.data
   } catch (error) {
     throw error
@@ -72,10 +74,9 @@ export const updateComment = async (recipeId, id, comment) => {
   }
 }
 
-
-export const deleteCommentAPI = async id => {
+export const deleteComment = async (recipeId, id) => {
   try {
-    const response = await api.delete(`/comments/${id}`)
+    const response = await api.delete(`/recipes/${recipeId}/comments/${id}`)
     return response.data
   } catch (error) {
     throw error
