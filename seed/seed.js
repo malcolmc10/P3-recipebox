@@ -152,7 +152,7 @@ const main = async () => {
     },
     {
       title: "Chicken Parm",
-      coverImage: "https://imgur.com/3znSL1M",
+      coverImage: "https://media.olivegarden.com/en_us/images/product/dinner-chicken-parm-dpv-590x365.jpg",
       servesPeople: 4,
       cookTime: 1,
       cookTimeUnit: "Hour",
@@ -2585,7 +2585,6 @@ const main = async () => {
        },
      ],
    },
-
   ]
   await Recipe.insertMany(recipes);
   console.log("Created recipes!");
