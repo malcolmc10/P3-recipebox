@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { updateRecipe } from "../Services/recipes"
+import { updateRecipe, updateComment } from "../Services/recipes"
 
 export default function Comment(props) {
 
-  const { index, recipe, setRecipe } = props
-  const { commentAuthor, commentDetails, commentTime } = props.comment
+  const { index, recipe, setRecipe, } = props
+  const { _id, commentAuthor, commentDetails, commentTime } = props.comment
 
   const [isClicked, setClick] = useState(false)
   const [comment, setComment] = useState({})
@@ -31,7 +31,8 @@ export default function Comment(props) {
     const cloneRecipe = { ...recipe }
     cloneRecipe.comments[index] = comment
     setRecipe(cloneRecipe)
-    updateRecipe(recipe._id, cloneRecipe)
+    // updateRecipe(recipe._id, cloneRecipe)
+    updateComment(recipe._id, _id, comment)
     setClick(!isClicked)
   }
 

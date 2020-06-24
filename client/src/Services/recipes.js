@@ -54,14 +54,24 @@ export const filter = async (filter) => {
   }
 }
 
-export const addCommentAPI = async (id, comment) => {
+export const addComment = async (id, comment) => {
   try {
-    const response = await api.put(`/recipes/${id}/comments`, comment)
+    const response = await api.post(`/recipes/${id}/comments`, comment)
     return response.data
   } catch (error) {
     throw error
   }
 }
+
+export const updateComment = async (recipeId, id, comment) => {
+  try {
+    const response = await api.put(`/recipes/${recipeId}/comments/${id}`, comment)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
+
 
 export const deleteCommentAPI = async id => {
   try {

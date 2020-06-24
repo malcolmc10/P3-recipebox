@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { updateRecipe } from "../Services/recipes"
+import { addComment } from "../Services/recipes"
 
 
 export default function AddComment(props) {
@@ -26,7 +26,7 @@ export default function AddComment(props) {
     setRecipe(cloneRecipe)
     document.getElementById('author').value = ''
     document.getElementById('content').value = ''
-    updateRecipe(recipe._id, cloneRecipe)
+    addComment(recipe._id, { ...comment, commentTime: date })
 
   }
 
