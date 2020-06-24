@@ -1,34 +1,88 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { updateRecipe } from "../Services/recipes"
-
 
 export default function Comment(props) {
 
   const { index, recipe, setRecipe } = props
   const { commentAuthor, commentDetails, commentTime } = props.comment
 
+  const [isClicked, setClick] = useState(false)
+  const [comment, setComment] = useState({})
+
+
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    
+    setComment({ ...comment, value })
+    
+
+    console.log(comment)
+  }
+
+
 
   const deleteComment = () => {
-
     const cloneRecipe = { ...recipe }
     cloneRecipe.comments.splice(index, 1)
     setRecipe(cloneRecipe)
     updateRecipe(recipe._id, cloneRecipe)
-  
+
+  }
+
+  const handleEditClick = (event) => {
+    setClick(!isClicked)
+  }
+
+  const handleSubmitClick = () => {
+    const cloneRecipe = { ...recipe }
+    const currentComment = cloneRecipe.comments[index].commentDetails
+    // const date = new Date().toLocaleString()
+
+
+    // cloneRecipe.comments.push({ ...comment, commentTime: date })
+
+    setComment({ ...cloneRecipe.comments[index].commentDetails, ...comment })
+    console.log(comment)
+
+
+
+    // setRecipe(cloneRecipe)
+    // document.getElementById('author').value = ''
+    // document.getElementById('content').value = ''
+
+
+
+
+    // updateRecipe(recipe._id, cloneRecipe)
+    setClick(!isClicked)
   }
 
 
   return (
     <div className=" border-gray-400 border-b-2 my-3 py-1 px-4 w-full ">
       <h4><b>{commentAuthor}</b></h4>
-      <p>{commentDetails}</p>
+
+
+
+      {isClicked ? <textarea class="h-full border border-gray-400 rounded-lg py-2 px-4 mb-4 block w-full appearance-none" value={comment} name="commentDetails" id='content' value={commentDetails}onChange={handleChange}></textarea> : <p>{commentDetails}</p>}
+
+
+
+
+
       <p><i>{commentTime}</i></p>
-      <button class="bg-orange-300 hover:bg-orange-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" type="button" >
-        Edit
-      </button>
+
+
+      {isClicked ? <button class="bg-green-300 hover:bg-green-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" onClick={handleSubmitClick} type="button"> Submit </button> :
+
+        <button class="bg-orange-300 hover:bg-orange-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" onClick={handleEditClick} type="button"> Edit </button>}
+
+
+
       <button class="bg-orange-300 hover:bg-orange-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" onClick={deleteComment} type="button" >
         Delete
       </button>
+
 
     </div>
   )
