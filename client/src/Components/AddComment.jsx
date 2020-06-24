@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
 import { updateRecipe } from "../Services/recipes"
 
 
@@ -9,7 +8,7 @@ export default function AddComment(props) {
 
   const [comment, setComment] = useState({})
 
-  // let history = useHistory();
+
 
 
   const handleChange = (event) => {
@@ -35,7 +34,6 @@ export default function AddComment(props) {
 
   return (
     <>
-
       <div class="my-5 mx-auto max-w-xl">
         <h3 class="text-2xl text-bold mb-5">Your Comment</h3>
         <form>

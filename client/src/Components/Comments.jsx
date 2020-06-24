@@ -9,6 +9,7 @@ export default function Comments(props) {
   return (
     <>
       <div class="content-center">
+        
         {recipe.comments && recipe.comments.map((comment, index) =>
           <Comment recipe={recipe} setRecipe={setRecipe} comment={comment} index={index}/>
         )}

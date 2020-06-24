@@ -2238,7 +2238,7 @@ const main = async () => {
     ],
   }
   
-  ],
+  ]
   await Recipe.insertMany(recipes);
   console.log("Created recipes!");
 };
