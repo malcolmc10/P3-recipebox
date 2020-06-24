@@ -68,8 +68,9 @@ const deleteRecipe = async (req, res) => {
 
 const search = async (req, res) => {
   try {
-    const recipes = await Recipe.find({ tags: req.term })
+    const recipes = await Recipe.find({ tags: new RegExp(`^${req.query.q}$`, 'i') })
     return res.json(recipes)
+
   } catch (err) {
     res.status(500).json({ error: err.message })
   }

@@ -54,6 +54,15 @@ export const filter = async (filter) => {
   }
 }
 
+export const search = async (query) => {
+  try {
+    const response = await api.get('/recipes/search', { params: query })
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
+
 export const addCommentAPI = async (id, comment) => {
   try {
     const response = await api.put(`/recipes/${id}/comments`, comment)

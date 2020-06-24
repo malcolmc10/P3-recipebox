@@ -5,7 +5,7 @@ const router = Router()
 
 router.get("/recipes", control.getRecipes);
 router.get("/recipes/filter", control.filter);
-router.get("/recipes/search/:term", control.search);
+router.get("/recipes/search", control.search);
 router.get("/recipes/:id", control.getRecipe);
 
 router.post("/recipes", control.createRecipe);
