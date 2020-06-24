@@ -149,6 +149,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["chicken","stew","soup"]
     },
     {
       title: "Chicken Parm",
@@ -312,6 +313,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["chicken","italian","cheese"]
     },
     {
       title: "Spanish Rice",
@@ -447,6 +449,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["rice","spanish"]
     },
 
     {
@@ -566,6 +569,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["bread","italian","gluten", "sweet"]
     },
 
     {
@@ -685,6 +689,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["veal","italian","gluten"]
     },
 
     {
@@ -876,6 +881,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["bread","italian","gluten"]
     },
     {
       title: "Oven Baked Korean BBQ Beef Ribs",
@@ -987,6 +993,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["baked","ribs","korean","beef"]
     },
     {
       title: "Beef Bulgogi Korean Tacos",
@@ -1132,6 +1139,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["korean","beef","tacos"]
     },
 
     
@@ -1241,6 +1249,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["kimchi","pancake","korean"]
     },
     {
       title: "Sweet and crunchy tofu",
@@ -1348,6 +1357,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["tofu","korean","spicy","crunchy"]
     },
     
     {
@@ -1487,6 +1497,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["dip","artichoke","spinach", "cheese"]
     },
     {
       title: "Grilled stuffed Jalapeño",
@@ -1633,6 +1644,7 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["jalapeno","cheese","bacon"]
     },
     {
       title: "Baked Clams",
@@ -1748,9 +1760,10 @@ const main = async () => {
           commentTime: "1592459790537",
         },
       ],
+      tags:["clams","seafood","bacon"]
     },
     {
-      title: "Spicy pork vidaloo",
+      title: "Spicy pork vindaloo",
       coverImage: "http://picturetherecipe.com/wp-content/uploads/2018/05/Vindaloo-by-PictureTheRecipe.jpg",
       servesPeople: 4,
       cookTime: 52,
@@ -1912,6 +1925,7 @@ const main = async () => {
         },
       ],
     },
+    tags:["pork","indian","potatoes"]
     {
     title: "Canadian Meatballs",
     coverImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/Canadian-Meatballs_exps118776_BAFTB2307047A01_19_7bC_RMS-1-696x696.jpg",
@@ -2049,6 +2063,7 @@ const main = async () => {
         commentTime: "1592459790537",
       },
     ],
+    tags:["meatballs","eggs","cheese"]
   },
   {
    title: "French Canadian Meat Pie",
@@ -2235,6 +2250,7 @@ const main = async () => {
         commentTime: "1592459790537",
       },
     ],
+    tags:["French","beef","pork", "patatoes"]
   },
   {
     title: "Palak Paneer",
@@ -2406,6 +2422,7 @@ const main = async () => {
          commentTime: "1592459790537",
        },
      ],
+     tags:["indian","cheese","spinach"]
    },
    {
     title: "Moroccan chickpea stew",
@@ -2584,6 +2601,7 @@ const main = async () => {
          commentTime: "1592459790537",
        },
      ],
+     tags:["Moroccan","lime juice","peas"]
    },
   ]
   await Recipe.insertMany(recipes);

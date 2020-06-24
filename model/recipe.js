@@ -54,6 +54,7 @@ const Recipe = new Schema(
         commentTime: { type: Number, required: true },
       },
     ],
+    tags:{ type: Array, required: false }
   },
   { timestamps: true }
 );
