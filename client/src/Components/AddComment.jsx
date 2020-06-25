@@ -22,7 +22,7 @@ export default function AddComment(props) {
 
     const cloneRecipe = { ...recipe }
     const date = new Date().toLocaleString()
-    cloneRecipe.comments.unshift({ ...comment, commentTime: date })
+    cloneRecipe.comments.push({ ...comment, commentTime: date })
     setRecipe(cloneRecipe)
     document.getElementById('author').value = ''
     document.getElementById('content').value = ''
@@ -41,7 +41,7 @@ export default function AddComment(props) {
 
           <textarea class="h-16 border border-gray-400 rounded-lg py-2 px-4 mb-4 block w-full appearance-none" name="commentDetails" placeholder="leave a comment" id='content' onChange={handleChange} ></textarea>
 
-          <button class="bg-orange-300 hover:bg-orange-600 text-white py-2 px-5 rounded focus:outline-none focus:shadow-outline" type="button" onClick={submitComment}>
+          <button className="bg-blue-200 rounded-full py-1 px-5 outline-none" type="button" onClick={submitComment}>
             Add Comment
           </button>
         </form>

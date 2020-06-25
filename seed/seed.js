@@ -92,8 +92,6 @@ const main = async () => {
           meta: "",
         },
         {
-          amountNum: null,
-          amountDen: 0,
           unit: "",
           name: "black pepper",
           consistency: "",

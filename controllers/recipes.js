@@ -1,5 +1,6 @@
 const Recipe = require("../model/recipe.js");
 const db = require("../db/connection");
+const mongoose = require("mongoose")
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
@@ -105,17 +106,17 @@ const addComment = async (req, res) => {
 };
 
 const updateComment = async (req, res) => {
+  const { id, recipeId } = req.params;
+  const recipe = await Recipe.findById(recipeId)
+  const oldComment = recipe.comments.id(id)
+  oldComment.set(req.body)
   try {
-    const comment = req.body
-    const { id, recipeId } = req.params;
-    const recipe = await Recipe.findById(recipeId)
-    recipe.comments.id(id) = comment
-    await recipe.save()
-    return res.json(recipe)
+    const updated = await recipe.save()
+    res.json(updated)
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-}
+};
 
 const deleteComment = async (req, res) => {
   try {
