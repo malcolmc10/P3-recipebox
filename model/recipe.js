@@ -51,7 +51,7 @@ const Recipe = new Schema(
       {
         commentAuthor: { type: String, required: true },
         commentDetails: { type: String, required: true },
-        commentTime: { type: Number, required: true },
+        commentTime: { type: String, required: true },
       },
     ],
     tags:{ type: Array, required: false }

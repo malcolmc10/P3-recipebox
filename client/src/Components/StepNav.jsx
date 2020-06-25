@@ -4,6 +4,18 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function StepNav() {
+
+  // var step1 = document.getElementById("#step1");
+  // var step2 = document.getElementById("#step2");
+  // var step3 = document.getElementById("#step3");
+  
+
+
+  // step1.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+  // step2.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+  // step3.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+
+  
   return (
     <nav class="text-gray-400 text-center text-xl sm:text-sm md:text-base lg:text-lg xl:text-2xl">
 
