@@ -35,7 +35,7 @@ export default function Header() {
         </li>
 
         <li className="hidden sm:block">
-          <a href="/">About</a>
+          <a href="#footer">About</a>
         </li>
 
         <li className="hidden sm:block">
