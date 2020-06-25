@@ -54,9 +54,15 @@ export const filter = async (filter) => {
   }
 }
 
-export const search = async (query) => {
+export const search = async (search) => {
   try {
-    const response = await api.get('/recipes/search', { params: query })
+    const response = await api.get('/recipes/search', {
+      params: {
+        q: search.query,
+        filters: search.filters
+      }
+    })
+    // const response = await api.get('/recipes/search', search)
     return response.data
   } catch (error) {
     throw error
