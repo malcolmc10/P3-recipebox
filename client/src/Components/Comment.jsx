@@ -57,11 +57,11 @@ export default function Comment(props) {
         <button class="bg-green-300 hover:bg-green-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" onClick={handleSubmitClick} type="button">
           Submit
       </button> :
-        <button class="bg-orange-300 hover:bg-orange-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" onClick={handleEditClick} type="button">
+        <button className="bg-blue-200 rounded-full py-1 px-5 outline-none focus:outline-none focus:shadow-outline" onClick={handleEditClick} type="button">
           Edit
       </button>}
 
-      <button class="bg-orange-300 hover:bg-orange-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" onClick={deleteComment} type="button" >
+      <button class="bg-blue-200 rounded-full py-1 px-5 outline-none focus:outline-none focus:shadow-outline" onClick={deleteComment} type="button" >
         Delete
       </button>
 

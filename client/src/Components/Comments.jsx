@@ -16,7 +16,7 @@ export default function Comments(props) {
     <>
       <div class="content-center">
         <div>
-          <button onClick={increaseLength}>
+          <button className="bg-blue-200 rounded-full py-1 px-5 outline-none" onClick={increaseLength}>
             Show More
           </button>
         </div>
