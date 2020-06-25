@@ -138,8 +138,11 @@ module.exports = {
   getRecipe,
   updateRecipe,
   deleteRecipe,
+
   filter,
   search,
-  updateComments,
+
+  addComment,
+  updateComment,
   deleteComment
 };
