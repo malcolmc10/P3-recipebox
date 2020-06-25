@@ -145,7 +145,7 @@ const main = async () => {
       comments: [
         
       ],
-      tags:["chicken","stew","soup"]
+      tags: ["chicken", "stew", "soup"]
     },
     {
       title: "Chicken Parm",
@@ -305,7 +305,7 @@ const main = async () => {
       comments: [
        
       ],
-      tags:["chicken","italian","cheese"]
+      tags: ["chicken", "italian", "cheese"]
     },
     {
       title: "Spanish Rice",
@@ -437,7 +437,7 @@ const main = async () => {
       comments: [
         
       ],
-      tags:["rice","spanish"]
+      tags: ["rice", "spanish"]
     },
 
     {
@@ -553,7 +553,7 @@ const main = async () => {
       comments: [
         
       ],
-      tags:["bread","italian","gluten", "sweet"]
+      tags: ["bread", "italian", "gluten", "sweet"]
     },
 
     {
@@ -669,12 +669,12 @@ const main = async () => {
       comments: [
         
       ],
-      tags:["veal","italian","gluten"]
+      tags: ["veal", "italian", "gluten"]
     },
 
     {
       title: "Focaccia bread",
-      coverImage:"https://www.gimmesomeoven.com/wp-content/uploads/2017/03/Rosemary-Focaccia-Bread-Recipe-1-2-1100x1650.jpg",  
+      coverImage: "https://www.gimmesomeoven.com/wp-content/uploads/2017/03/Rosemary-Focaccia-Bread-Recipe-1-2-1100x1650.jpg",
       servesPeople: 6,
       cookTime: 25,
       cookTimeUnit: "Minutes",
@@ -857,7 +857,7 @@ const main = async () => {
       comments: [
         
       ],
-      tags:["bread","italian","gluten"]
+      tags: ["bread", "italian", "gluten"]
     },
     {
       title: "Oven Baked Korean BBQ Beef Ribs",
@@ -965,7 +965,7 @@ const main = async () => {
       comments: [
       
       ],
-      tags:["baked","ribs","korean","beef"]
+      tags: ["baked", "ribs", "korean", "beef"]
     },
     {
       title: "Beef Bulgogi Korean Tacos",
@@ -976,7 +976,7 @@ const main = async () => {
       ingredients: [
         {
           amountNum: 3,
-          amountDen:1,
+          amountDen: 1,
           unit: "",
           name: "medium green onions",
           consistency: "chopped",
@@ -984,7 +984,7 @@ const main = async () => {
         },
         {
           amountNum: 3,
-          amountDen:1,
+          amountDen: 1,
           unit: "tablespoons",
           name: "sugar",
           consistency: "",
@@ -992,7 +992,7 @@ const main = async () => {
         },
         {
           amountNum: 2,
-          amountDen:1,
+          amountDen: 1,
           unit: "tablespoons",
           name: "vegetable oil",
           consistency: "",
@@ -1000,7 +1000,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:1,
+          amountDen: 1,
           unit: "lb",
           name: "beef top sirloin steak",
           consistency: "thinly sliced against the grain",
@@ -1040,7 +1040,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:1,
+          amountDen: 1,
           unit: "cup",
           name: "fresh cilantro sprigs",
           consistency: "",
@@ -1107,10 +1107,10 @@ const main = async () => {
       comments: [
         
       ],
-      tags:["korean","beef","tacos"]
+      tags: ["korean", "beef", "tacos"]
     },
 
-    
+
     {
       title: "Kimchi pancake",
       coverImage: "https://www.maangchi.com/wp-content/uploads/2020/02/kimchipancake-620x349.jpg",
@@ -1120,7 +1120,7 @@ const main = async () => {
       ingredients: [
         {
           amountNum: 1,
-          amountDen:2,
+          amountDen: 2,
           unit: "pound",
           name: "Napa Cabbage Kimchi",
           consistency: "chopped",
@@ -1128,7 +1128,7 @@ const main = async () => {
         },
         {
           amountNum: 3,
-          amountDen:1,
+          amountDen: 1,
           unit: "",
           name: "scallions",
           consistency: "chopped",
@@ -1144,7 +1144,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:2,
+          amountDen: 2,
           unit: "cup",
           name: "flour",
           consistency: "",
@@ -1166,7 +1166,7 @@ const main = async () => {
           consistency: "",
           meta: "for frying",
         },
-        
+
       ],
       preparation: [
         {
@@ -1213,7 +1213,7 @@ const main = async () => {
       comments: [
       
       ],
-      tags:["kimchi","pancake","korean"]
+      tags: ["kimchi", "pancake", "korean"]
     },
     {
       title: "Sweet and crunchy tofu",
@@ -1224,7 +1224,7 @@ const main = async () => {
       ingredients: [
         {
           amountNum: 2,
-          amountDen:1,
+          amountDen: 1,
           unit: "cups",
           name: "vegtable oil",
           consistency: "",
@@ -1232,7 +1232,7 @@ const main = async () => {
         },
         {
           amountNum: 14,
-          amountDen:1,
+          amountDen: 1,
           unit: "oz",
           name: "firm tofu",
           consistency: "chopped",
@@ -1248,7 +1248,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:3,
+          amountDen: 3,
           unit: "cup",
           name: "ketchup",
           consistency: "",
@@ -1270,7 +1270,7 @@ const main = async () => {
           consistency: "",
           meta: " (Korean hot pepper paste) for sauce",
         },
-        
+
       ],
       preparation: [
         {
@@ -1317,9 +1317,9 @@ const main = async () => {
       comments: [
       
       ],
-      tags:["tofu","korean","spicy","crunchy"]
+      tags: ["tofu", "korean", "spicy", "crunchy"]
     },
-    
+
     {
       title: "Spinach artichoke dip",
       coverImage: "http://picturetherecipe.com/wp-content/uploads/2012/10/Ranch-Chicken-Stuffed-Potato-Skins-PTR4.jpg",
@@ -1329,7 +1329,7 @@ const main = async () => {
       ingredients: [
         {
           amountNum: 2,
-          amountDen:1,
+          amountDen: 1,
           unit: "cups",
           name: "shredded part-skim mozzarella cheese",
           consistency: "",
@@ -1337,7 +1337,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:2,
+          amountDen: 2,
           unit: "cup",
           name: "fat-free sour cream",
           consistency: "",
@@ -1353,7 +1353,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:4,
+          amountDen: 4,
           unit: "tsp",
           name: "black pepper",
           consistency: "",
@@ -1453,7 +1453,7 @@ const main = async () => {
       comments: [
       
       ],
-      tags:["dip","artichoke","spinach", "cheese"]
+      tags: ["dip", "artichoke", "spinach", "cheese"]
     },
     {
       title: "Grilled stuffed Jalapeño",
@@ -1464,7 +1464,7 @@ const main = async () => {
       ingredients: [
         {
           amountNum: 2,
-          amountDen:1,
+          amountDen: 1,
           unit: "",
           name: "center-cut bacon",
           consistency: "slices",
@@ -1472,7 +1472,7 @@ const main = async () => {
         },
         {
           amountNum: 4,
-          amountDen:1,
+          amountDen: 1,
           unit: "oz",
           name: "cream cheese",
           consistency: "softened",
@@ -1488,7 +1488,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:1,
+          amountDen: 1,
           unit: "oz",
           name: "extra-sharp cheddar cheese",
           consistency: "shredded",
@@ -1596,7 +1596,7 @@ const main = async () => {
       comments: [
       
       ],
-      tags:["jalapeno","cheese","bacon"]
+      tags: ["jalapeno", "cheese", "bacon"]
     },
     {
       title: "Baked Clams",
@@ -1607,7 +1607,7 @@ const main = async () => {
       ingredients: [
         {
           amountNum: 1,
-          amountDen:2,
+          amountDen: 2,
           unit: "cup",
           name: "white wine",
           consistency: "dry",
@@ -1615,7 +1615,7 @@ const main = async () => {
         },
         {
           amountNum: 32,
-          amountDen:1,
+          amountDen: 1,
           unit: "",
           name: "littleneck clams",
           consistency: "in shells, scrubbed",
@@ -1631,7 +1631,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:1,
+          amountDen: 1,
           unit: "oz",
           name: "French bread baguette",
           consistency: "slice",
@@ -1661,7 +1661,7 @@ const main = async () => {
           consistency: "chopped",
           meta: "",
         },
-        
+
       ],
       preparation: [
         {
@@ -1708,7 +1708,7 @@ const main = async () => {
       comments: [
       
       ],
-      tags:["clams","seafood","bacon"]
+      tags: ["clams", "seafood", "bacon"]
     },
     {
       title: "Spicy pork vindaloo",
@@ -1719,7 +1719,7 @@ const main = async () => {
       ingredients: [
         {
           amountNum: 2,
-          amountDen:1,
+          amountDen: 1,
           unit: "lbs",
           name: "pork",
           consistency: "cubed",
@@ -1727,7 +1727,7 @@ const main = async () => {
         },
         {
           amountNum: 7,
-          amountDen:1,
+          amountDen: 1,
           unit: "",
           name: "baby potato's",
           consistency: "halved",
@@ -1743,7 +1743,7 @@ const main = async () => {
         },
         {
           amountNum: 1,
-          amountDen:1,
+          amountDen: 1,
           unit: "",
           name: "salt",
           consistency: "",
@@ -1821,7 +1821,7 @@ const main = async () => {
           consistency: "",
           meta: "for sauce",
         },
-        
+
       ],
       preparation: [
         {
@@ -1868,672 +1868,669 @@ const main = async () => {
       comments: [
         
       ],
-      tags:["pork","indian","potatoes"]
+      tags: ["pork", "indian", "potatoes"]
     },
-    
     {
-    title: "Canadian Meatballs",
-    coverImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/Canadian-Meatballs_exps118776_BAFTB2307047A01_19_7bC_RMS-1-696x696.jpg",
-    servesPeople: 5,
-    cookTime: 1,
-    cookTimeUnit: "hour",
-    ingredients: [
-      {
-        amount: 2,
-        amountDen:1,
-        unit: "",
-        name: "Large Eggs",
-        consistency: "lighty beaten",
-        meta: "",
+      title: "Canadian Meatballs",
+      coverImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/Canadian-Meatballs_exps118776_BAFTB2307047A01_19_7bC_RMS-1-696x696.jpg",
+      servesPeople: 5,
+      cookTime: 1,
+      cookTimeUnit: "hour",
+      ingredients: [
+        {
+          amount: 2,
+          amountDen: 1,
+          unit: "",
+          name: "Large Eggs",
+          consistency: "lighty beaten",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "cup",
+          name: "evaporated milk",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "cup",
+          name: "chedder cheese",
+          consistency: "shredded",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 3,
+          unit: "cup",
+          name: "onion",
+          consistency: "finely chopped",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "lb.",
+          name: "bulk pork sausage",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "tbs",
+          name: "cornstarch",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "cup",
+          name: "chile sauce",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "cup",
+          name: "maple syrup",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "tbs",
+          name: "Worcestershire sauce",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "tbs",
+          name: "maple flavoring",
+          consistency: "",
+          meta: "",
+        },
+      ],
+      preparation: [
+        {
+          step: 1,
+          description:
+            "Bring wine to a boil in a large skillet over medium-high heat. Add clams; cover and cook 4 minutes or until shells open. Remove clams from pan, reserving cooking liquid. Discard any unopened shells. Strain cooking liquid through a cheesecloth-lined sieve into a medium bowl. Cool clams. Discard top shells. Place clams, still in bottom shell halves, in a single layer on a baking sheet.",
+          stepImage: "https://www.prouditaliancook.com/wp-content/uploads/2019/12/clam-platter.jpg",
+        },
+        {
+          step: 2,
+          description:
+            "Place meatballs on a greased rack in a shallow baking pan. Bake, uncovered, at 400° for 15-20 minutes or until a thermometer reads 160°. Drain onto paper towels.",
+          stepImage: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F04%2Fmain%2Fgrilled-stuffed-jalapenos-1704w_6.jpg%3Fitok%3D5b6bb9Mn",
+        },
+        {
+          step: 3,
+          description:
+            "Meanwhile, in a large skillet, whisk the sauce ingredients until smooth. Bring to a boil. Cook and stir for 1-2 minutes or until thickened. Add meatballs; stir to coat.",
+          stepImage: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F04%2Fmain%2Fgrilled-stuffed-jalapenos-1704w_6.jpg%3Fitok%3D5b6bb9Mn",
+        },
+      ],
+      filters: {
+        healthy: false,
+        seasonal: false,
+        min30: false,
+        glutenFree: false,
+        vegetarian: false,
+        breakfast: false,
+        lunch: true,
+        dinner: true,
+        dessert: false,
+        snack: true,
+        indian: false,
+        thai: false,
+        japanese: false,
+        french: false,
+        italian: false,
+        mexican: false,
+        american: false,
+        canadian: true,
+        korean: false,
+        polish: false,
       },
-      {
-        amountNum: 1,
-        amountDen:2,
-        unit: "cup",
-        name: "evaporated milk",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 1,
-        amountDen: 1,
-        unit: "cup",
-        name: "chedder cheese",
-        consistency: "shredded",
-        meta: "",
-      },
-      {
-        amountNum: 2,
-        amountDen:3,
-        unit: "cup",
-        name: "onion",
-        consistency: "finely chopped",
-        meta: "",
-      },
-      {
-        amountNum: 1,
-        amountDen: 1,
-        unit: "lb.",
-        name: "bulk pork sausage",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 2,
-        amountDen: 1,
-        unit: "tbs",
-        name: "cornstarch",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 1,
-        amountDen: 1,
-        unit: "cup",
-        name: "chile sauce",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 1,
-        amountDen: 1,
-        unit: "cup",
-        name: "maple syrup",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 2,
-        amountDen: 1,
-        unit: "tbs",
-        name: "Worcestershire sauce",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 2,
-        amountDen: 1,
-        unit: "tbs",
-        name: "maple flavoring",
-        consistency: "",
-        meta: "",
-      },
-    ],
-    preparation: [
-      {
-        step: 1,
-        description:
-          "Bring wine to a boil in a large skillet over medium-high heat. Add clams; cover and cook 4 minutes or until shells open. Remove clams from pan, reserving cooking liquid. Discard any unopened shells. Strain cooking liquid through a cheesecloth-lined sieve into a medium bowl. Cool clams. Discard top shells. Place clams, still in bottom shell halves, in a single layer on a baking sheet.",
-        stepImage: "https://www.prouditaliancook.com/wp-content/uploads/2019/12/clam-platter.jpg",
-      },
-      {
-        step: 2,
-        description:
-          "Place meatballs on a greased rack in a shallow baking pan. Bake, uncovered, at 400° for 15-20 minutes or until a thermometer reads 160°. Drain onto paper towels.",
-        stepImage: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F04%2Fmain%2Fgrilled-stuffed-jalapenos-1704w_6.jpg%3Fitok%3D5b6bb9Mn",
-      },
-      {
-        step: 3,
-        description:
-          "Meanwhile, in a large skillet, whisk the sauce ingredients until smooth. Bring to a boil. Cook and stir for 1-2 minutes or until thickened. Add meatballs; stir to coat.",
-        stepImage: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F04%2Fmain%2Fgrilled-stuffed-jalapenos-1704w_6.jpg%3Fitok%3D5b6bb9Mn",
-      },
-    ],
-    filters: {
-      healthy: false,
-      seasonal: false,
-      min30: false,
-      glutenFree: false,
-      vegetarian: false,
-      breakfast: false,
-      lunch: true,
-      dinner: true,
-      dessert: false,
-      snack: true,
-      indian: false,
-      thai: false,
-      japanese: false,
-      french: false,
-      italian: false,
-      mexican: false,
-      american: false,
-      canadian: true,
-      korean: false,
-      polish: false,
+      comments: [
+        
+      ],
+      tags: ["meatballs", "eggs", "cheese"]
     },
-    comments: [
-    
-    ],
-    tags:["meatballs","eggs","cheese"]
-  },
-  {
-   title: "French Canadian Meat Pie",
-    coverImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16208_TH10206C29C.jpg",
-    servesPeople: 5,
-    cookTime: 1,
-    cookTimeUnit: "hour",
-    ingredients: [
-      {
-        amount: 1,
-        amountDen:1,
-        unit: "lb",
-        name: "ground beef",
-        consistency: "",
-        meta: "",
+    {
+      title: "French Canadian Meat Pie",
+      coverImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16208_TH10206C29C.jpg",
+      servesPeople: 5,
+      cookTime: 1,
+      cookTimeUnit: "hour",
+      ingredients: [
+        {
+          amount: 1,
+          amountDen: 1,
+          unit: "lb",
+          name: "ground beef",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 3,
+          amountDen: 4,
+          unit: "lb",
+          name: "ground pork",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "",
+          name: "celery ribs",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "",
+          name: "garlic cloves",
+          consistency: "minced",
+          meta: "",
+        },
+        {
+          amountNum: 6,
+          amountDen: 1,
+          unit: "cups",
+          name: "hot mashed potatoes",
+          consistency: "(prepared without milk or butter)",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 4,
+          unit: "cup",
+          name: "olive oil",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "",
+          name: "salt",
+          consistency: "",
+          meta: "to taste",
+        },
+        {
+          amountNum: 13,
+          amountDen: 1,
+          unit: "",
+          name: "Dry Kashmiri Chilies",
+          consistency: "",
+          meta: "for sauce",
+        },
+        {
+          amountNum: 10,
+          amountDen: 1,
+          unit: "tbs",
+          name: "cloves of Garlic",
+          consistency: "",
+          meta: "for sauce",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "",
+          name: "small onion",
+          consistency: "",
+          meta: "for sauce",
+        },
+        {
+          amountNum: 4.5,
+          amountDen: 1,
+          unit: "",
+          name: "Cardamom Pods",
+          consistency: "",
+          meta: "for sauce",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "tsp",
+          name: "Cumin Seeds",
+          consistency: "",
+          meta: "for sauce",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "tbs",
+          name: "Turmeric powder",
+          consistency: "",
+          meta: "for sauce",
+        },
+        {
+          amountNum: 3,
+          amountDen: 1,
+          unit: "tbs",
+          name: "Sugar",
+          consistency: "",
+          meta: "for sauce",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "tsp",
+          name: "Black Peppercorns",
+          consistency: "",
+          meta: "for sauce",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "cup",
+          name: "White Vinegar",
+          consistency: "",
+          meta: "for sauce",
+        },
+      ],
+      preparation: [
+        {
+          step: 1,
+          description:
+            "In a large skillet, cook the beef, pork, onion and celery over medium heat until meat is no longer pink. Add garlic; cook 1 minute longer. Drain. Remove from the heat. Stir in the potatoes, broth and seasonings.",
+          stepImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16208_TH10206C29C.jpg",
+        },
+        {
+          step: 2,
+          description:
+            "Line two 9-in. pie plates with pastry. Divide meat mixture between crusts. Top with remaining pastry; trim, seal and flute edges.",
+          stepImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16208_TH10206C29C.jpg",
+        },
+        {
+          step: 3,
+          description:
+            "Cut slits in top. Brush with milk if desired. Bake at 375° for 30-35 minutes or until golden brown.",
+          stepImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16208_TH10206C29C.jpg",
+        },
+      ],
+      filters: {
+        healthy: false,
+        seasonal: false,
+        min30: false,
+        glutenFree: false,
+        vegetarian: false,
+        breakfast: false,
+        lunch: false,
+        dinner: true,
+        dessert: false,
+        snack: false,
+        indian: false,
+        thai: false,
+        japanese: false,
+        french: true,
+        italian: false,
+        mexican: false,
+        american: false,
+        canadian: true,
+        korean: false,
+        polish: false,
       },
-      {
-        amountNum: 3,
-        amountDen:4,
-        unit: "lb",
-        name: "ground pork",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 2,
-        amountDen: 1,
-        unit: "",
-        name: "celery ribs",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 2,
-        amountDen:1,
-        unit: "",
-        name: "garlic cloves",
-        consistency: "minced",
-        meta: "",
-      },
-      {
-        amountNum: 6,
-        amountDen: 1,
-        unit: "cups",
-        name: "hot mashed potatoes",
-        consistency: "(prepared without milk or butter)",
-        meta: "",
-      },
-      {
-        amountNum: 1,
-        amountDen: 4,
-        unit: "cup",
-        name: "olive oil",
-        consistency: "",
-        meta: "",
-      },
-      {
-        amountNum: 1,
-        amountDen:1,
-        unit: "",
-        name: "salt",
-        consistency: "",
-        meta: "to taste",
-      },
-      {
-        amountNum: 13,
-        amountDen: 1,
-        unit: "",
-        name: "Dry Kashmiri Chilies",
-        consistency: "",
-        meta: "for sauce",
-      },
-      {
-        amountNum: 10,
-        amountDen: 1,
-        unit: "tbs",
-        name: "cloves of Garlic",
-        consistency: "",
-        meta: "for sauce",
-      },
-      {
-        amountNum: 1,
-        amountDen: 1,
-        unit: "",
-        name: "small onion",
-        consistency: "",
-        meta: "for sauce",
-      },
-      {
-        amountNum: 4.5,
-        amountDen: 1,
-        unit: "",
-        name: "Cardamom Pods",
-        consistency: "",
-        meta: "for sauce",
-      },
-      {
-        amountNum: 2,
-        amountDen: 1,
-        unit: "tsp",
-        name: "Cumin Seeds",
-        consistency: "",
-        meta: "for sauce",
-      },
-      {
-        amountNum: 1,
-        amountDen: 2,
-        unit: "tbs",
-        name: "Turmeric powder",
-        consistency: "",
-        meta: "for sauce",
-      },
-      {
-        amountNum: 3,
-        amountDen: 1,
-        unit: "tbs",
-        name: "Sugar",
-        consistency: "",
-        meta: "for sauce",
-      },
-      {
-        amountNum: 1,
-        amountDen: 2,
-        unit: "tsp",
-        name: "Black Peppercorns",
-        consistency: "",
-        meta: "for sauce",
-      },
-      {
-        amountNum: 1,
-        amountDen: 2,
-        unit: "cup",
-        name: "White Vinegar",
-        consistency: "",
-        meta: "for sauce",
-      },
-    ],
-    preparation: [
-      {
-        step: 1,
-        description:
-          "In a large skillet, cook the beef, pork, onion and celery over medium heat until meat is no longer pink. Add garlic; cook 1 minute longer. Drain. Remove from the heat. Stir in the potatoes, broth and seasonings.",
-        stepImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16208_TH10206C29C.jpg",
-      },
-      {
-        step: 2,
-        description:
-          "Line two 9-in. pie plates with pastry. Divide meat mixture between crusts. Top with remaining pastry; trim, seal and flute edges.",
-        stepImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16208_TH10206C29C.jpg",
-      },
-      {
-        step: 3,
-        description:
-          "Cut slits in top. Brush with milk if desired. Bake at 375° for 30-35 minutes or until golden brown.",
-        stepImage: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps16208_TH10206C29C.jpg",
-      },
-    ],
-    filters: {
-      healthy: false,
-      seasonal: false,
-      min30: false,
-      glutenFree: false,
-      vegetarian: false,
-      breakfast: false,
-      lunch: false,
-      dinner: true,
-      dessert: false,
-      snack: false,
-      indian: false,
-      thai: false,
-      japanese: false,
-      french: true,
-      italian: false,
-      mexican: false,
-      american: false,
-      canadian: true,
-      korean: false,
-      polish: false,
+      comments: [
+        
+      ],
+      tags: ["French", "beef", "pork", "patatoes"]
     },
-    comments: [
-      
-    ],
-    tags:["French","beef","pork", "patatoes"]
-  },
-  {
-    title: "Palak Paneer",
-     coverImage: "http://picturetherecipe.com/wp-content/uploads/2020/04/Palak-Paneer-Story-by-PictureTheRecipe.jpg",
-     servesPeople: 4,
-     cookTime: 20,
-     cookTimeUnit: "Minutes",
-     ingredients: [
-       {
-         amount: 1,
-         amountDen:1,
-         unit: "cup",
-         name: "Paneer",
-         consistency: "cubed",
-         meta: "",
-       },
-       {
-         amountNum: 3,
-         amountDen:1,
-         unit: "cups",
-         name: "spinach",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 2,
-         amountDen: 1,
-         unit: "tbsp",
-         name: "oil/butter",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 2,
-         amountDen:1,
-         unit: "",
-         name: "green chilies",
-         consistency: "thai peppers",
-         meta: "Adjust to your heat level",
-       },
-       {
-         amountNum: 3,
-         amountDen: 4,
-         unit: "cups",
-         name: "onion",
-         consistency: "diced",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "tsp",
-         name: "garlic-ginger paste",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen:2,
-         unit: "cup",
-         name: "tomatos",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 2,
-         unit: "tsp",
-         name: "kasuri methi",
-         consistency: "",
-         meta: "dried fenugreek leaves (optional)",
-       },
-       {
-         amountNum: 8,
-         amountDen: 1,
-         unit: "",
-         name: "cashews",
-         consistency: "",
-         meta: "soaked in warm water and blendid to paste",
-       },
-       {
-         amountNum: 1,
-         amountDen: 4,
-         unit: "cup",
-         name: "heavy cream",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 2,
-         amountDen: 1,
-         unit: "",
-         name: " Green Cardamom Pods",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 4,
-         unit: "tsp",
-         name: "Cumin Seeds",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 2,
-         amountDen: 1,
-         unit: "",
-         name: "cloves",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "tsp",
-         name: "coriander powder",
-         consistency: "",
-         meta: "",
-       },
-       
-     ],
-     preparation: [
-       {
-         step: 1,
-         description:
-           "Add a teaspoon oil in a pan and add the sliced green chilies and spinach leaves. Cook the leaves until just wilted, but avoid overcooking to retain its vibrant green color. Set aside to cool. Once cooled blend the spinach and green chilies to a smooth puree.To make the gravy- heat oil in a pan and add the whole spices. as soon as they begin to splutter add the onions and sauté on medium high heat until they turn translucent.",
-         stepImage: "http://picturetherecipe.com/wp-content/uploads/2018/05/Fiery-Pork-Vindaloo-by-PictureTheRecipe.jpg",
-       },
-       {
-         step: 2,
-         description:
-           "Add the ginger garlic paste and fry until the raw smell goes away. Add the tomatoes and season with salt. cook the tomatoes down until they turn mushy. The add the kasuri methi and spice powders and fry the mixture until it starts releasing oil. Pour in half a cup of water and stir until the mixture thickens. Lower the heat and add the spinach puree. mix well until it comes to a gentle simmer.",
-         stepImage: "http://picturetherecipe.com/wp-content/uploads/2018/05/Vindaloo-by-PictureTheRecipe.jpg",
-       },
-       {
-         step: 3,
-         description:
-           "(optional) Pan fry the paneer cubes with 1-2 tsp oil for 2-3 mins until golden on each side in a separate pan. Add the paneer cubes to the spinach mixture and turn off the heat. Add the cashew paste mixed with the cream and stir it in for added creaminess. Reserve some for garnish.",
-         stepImage: "http://picturetherecipe.com/wp-content/uploads/2018/05/Vindaloo-by-PictureTheRecipe.jpg",
-       },
-     ],
-     filters: {
-       healthy: true,
-       seasonal: false,
-       min30: true,
-       glutenFree: false,
-       vegetarian: true,
-       breakfast: true,
-       lunch: true,
-       dinner: true,
-       dessert: false,
-       snack: false,
-       indian: true,
-       thai: false,
-       japanese: false,
-       french: false,
-       italian: false,
-       mexican: false,
-       american: false,
-       canadian: false,
-       korean: false,
-       polish: false,
-     },
-     comments: [
-       
-     ],
-     tags:["indian","cheese","spinach"]
-   },
-   {
-    title: "Moroccan chickpea stew",
-     coverImage: "http://picturetherecipe.com/wp-content/uploads/2015/02/Moroccan-Chickpea-Stew-with-Butternut-Squash-by-PictureTheRecipe-com.jpg",
-     servesPeople: 4,
-     cookTime: 40,
-     cookTimeUnit: "Minutes",
-     ingredients: [
-       {
-         amount: 1,
-         amountDen:1,
-         unit: "can",
-         name: "Chickpeas",
-         consistency: "cubed",
-         meta: "",
-       },
-       {
-         amountNum: 3,
-         amountDen:1,
-         unit: "",
-         name: "tomatoes",
-         consistency: "",
-         meta: "cubed",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "",
-         name: "onion",
-         consistency: "grated",
-         meta: "",
-       },
-       {
-         amountNum: 3,
-         amountDen:1,
-         unit: "cloves",
-         name: "garlic",
-         consistency: "grated",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "cup",
-         name: "butternut squash",
-         consistency: "diced",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "",
-         name: "zucchini",
-         consistency: "diced",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen:1,
-         unit: "tbs",
-         name: "chili paste",
-         consistency: "",
-         meta: "Please adjust to your spice level",
-       },
-       {
-         amountNum: 1,
-         amountDen: 2,
-         unit: "tsp",
-         name: "paprika",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 2,
-         unit: "tsp",
-         name: "cumin",
-         consistency: "",
-         meta: "soaked in warm water and blendid to paste",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "tsp",
-         name: "coriander powder",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "tsp",
-         name: "dried oregano",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 2,
-         unit: "tsp",
-         name: "dried thyme",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 4,
-         unit: "tsp",
-         name: "cinnamon",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "tbs",
-         name: "sugar (optional)",
-         consistency: "",
-         meta: "",
-       },
-       {
-         amountNum: 1,
-         amountDen: 1,
-         unit: "",
-         name: "Juice of 1/2 lemon",
-         consistency: "",
-         meta: "",
-       },
-     ],
-     preparation: [
-       {
-         step: 1,
-         description:
-           "If you want to use fresh tomatoes over a canned puree, first score an 'x' on the bottom of the tomatoes. Submerge them in a pot of water, cover it and bring to a rapid boil. As soon as the tomatoes blister and the peel starts loosening off, turn the heat off, drain the water and allow them to cool before peeling and pureeing them in a blender/food processor. To prep the vegetables, grate (or pulse in a food processor) one medium onion and the garlic cloves. Peel and dice about a cup of butternut squash and one zucchini (leaving the skin on the zucchini). And finely chop a generous handful of parsley. Heat the olive oil in a deep pan, then add the grated onion and saute for 3-4 minutes until they turn soft and translucent. Then toss in the grated garlic and chili paste and saute the mix for another minute or so.",
-         stepImage: "http://picturetherecipe.com/wp-content/uploads/2015/02/Moroccan-Chickpea-Stew-with-Butternut-Squash-by-PictureTheRecipe-com.jpg",
-       },
-       {
-         step: 2,
-         description:
-           "Add the paprika, cumin, coriander powder, oregano, thyme and cinnamon powder. Give it a quick stir!) to fry off the spices so they don't have that raw taste. Pour in the tomato puree and mix everything well scraping any brown bits on the bottom of the pan. Season the mixture with salt and pepper according to your taste. Next add in the butternut squash, chickpeas with the water and zucchini into the pot",
-         stepImage: "http://picturetherecipe.com/wp-content/uploads/2015/02/Moroccan-Chickpea-Stew-with-Butternut-Squash-by-PictureTheRecipe-com.jpg",
-       },
-       {
-         step: 3,
-         description:
-           "Stir in 1 tbsp of sugar (optional), the juice of 1/4 of a lemon and pinch of the freshly cut parsley (reserving the other 1/4 lemon and parsley for a garnish). Cover and let the stew simmer on low for 15-20 minutes stirring occasionally until the butternut squash is tender and fork ready. When you're ready to serve sprinkle in some sumac (a middle eastern dried and powdered berry that's tangy, similar to juniper berry), a squeeze of lemon juice and the remaining chopped parsley. Serve hot over couscous or rice.",
-         stepImage: "http://picturetherecipe.com/wp-content/uploads/2015/02/Moroccan-Chickpea-Stew-with-Butternut-Squash-by-PictureTheRecipe-com.jpg",
-       },
-     ],
-     filters: {
-       healthy: true,
-       seasonal: false,
-       min30: false,
-       glutenFree: false,
-       vegetarian: true,
-       breakfast: false,
-       lunch: true,
-       dinner: true,
-       dessert: false,
-       snack: false,
-       indian: true,
-       thai: false,
-       japanese: false,
-       french: false,
-       italian: false,
-       mexican: false,
-       american: false,
-       canadian: false,
-       korean: false,
-       polish: false,
-     },
-     comments: [
-       {
-         
-       },
-     ],
-     tags:["Moroccan","lime juice","peas"]
-   },
+    {
+      title: "Palak Paneer",
+      coverImage: "http://picturetherecipe.com/wp-content/uploads/2020/04/Palak-Paneer-Story-by-PictureTheRecipe.jpg",
+      servesPeople: 4,
+      cookTime: 20,
+      cookTimeUnit: "Minutes",
+      ingredients: [
+        {
+          amount: 1,
+          amountDen: 1,
+          unit: "cup",
+          name: "Paneer",
+          consistency: "cubed",
+          meta: "",
+        },
+        {
+          amountNum: 3,
+          amountDen: 1,
+          unit: "cups",
+          name: "spinach",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "tbsp",
+          name: "oil/butter",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "",
+          name: "green chilies",
+          consistency: "thai peppers",
+          meta: "Adjust to your heat level",
+        },
+        {
+          amountNum: 3,
+          amountDen: 4,
+          unit: "cups",
+          name: "onion",
+          consistency: "diced",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "tsp",
+          name: "garlic-ginger paste",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "cup",
+          name: "tomatos",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "tsp",
+          name: "kasuri methi",
+          consistency: "",
+          meta: "dried fenugreek leaves (optional)",
+        },
+        {
+          amountNum: 8,
+          amountDen: 1,
+          unit: "",
+          name: "cashews",
+          consistency: "",
+          meta: "soaked in warm water and blendid to paste",
+        },
+        {
+          amountNum: 1,
+          amountDen: 4,
+          unit: "cup",
+          name: "heavy cream",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "",
+          name: " Green Cardamom Pods",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 4,
+          unit: "tsp",
+          name: "Cumin Seeds",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 2,
+          amountDen: 1,
+          unit: "",
+          name: "cloves",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "tsp",
+          name: "coriander powder",
+          consistency: "",
+          meta: "",
+        },
+
+      ],
+      preparation: [
+        {
+          step: 1,
+          description:
+            "Add a teaspoon oil in a pan and add the sliced green chilies and spinach leaves. Cook the leaves until just wilted, but avoid overcooking to retain its vibrant green color. Set aside to cool. Once cooled blend the spinach and green chilies to a smooth puree.To make the gravy- heat oil in a pan and add the whole spices. as soon as they begin to splutter add the onions and sauté on medium high heat until they turn translucent.",
+          stepImage: "http://picturetherecipe.com/wp-content/uploads/2018/05/Fiery-Pork-Vindaloo-by-PictureTheRecipe.jpg",
+        },
+        {
+          step: 2,
+          description:
+            "Add the ginger garlic paste and fry until the raw smell goes away. Add the tomatoes and season with salt. cook the tomatoes down until they turn mushy. The add the kasuri methi and spice powders and fry the mixture until it starts releasing oil. Pour in half a cup of water and stir until the mixture thickens. Lower the heat and add the spinach puree. mix well until it comes to a gentle simmer.",
+          stepImage: "http://picturetherecipe.com/wp-content/uploads/2018/05/Vindaloo-by-PictureTheRecipe.jpg",
+        },
+        {
+          step: 3,
+          description:
+            "(optional) Pan fry the paneer cubes with 1-2 tsp oil for 2-3 mins until golden on each side in a separate pan. Add the paneer cubes to the spinach mixture and turn off the heat. Add the cashew paste mixed with the cream and stir it in for added creaminess. Reserve some for garnish.",
+          stepImage: "http://picturetherecipe.com/wp-content/uploads/2018/05/Vindaloo-by-PictureTheRecipe.jpg",
+        },
+      ],
+      filters: {
+        healthy: true,
+        seasonal: false,
+        min30: true,
+        glutenFree: false,
+        vegetarian: true,
+        breakfast: true,
+        lunch: true,
+        dinner: true,
+        dessert: false,
+        snack: false,
+        indian: true,
+        thai: false,
+        japanese: false,
+        french: false,
+        italian: false,
+        mexican: false,
+        american: false,
+        canadian: false,
+        korean: false,
+        polish: false,
+      },
+      comments: [
+        
+      ],
+      tags: ["indian", "cheese", "spinach"]
+    },
+    {
+      title: "Moroccan chickpea stew",
+      coverImage: "http://picturetherecipe.com/wp-content/uploads/2015/02/Moroccan-Chickpea-Stew-with-Butternut-Squash-by-PictureTheRecipe-com.jpg",
+      servesPeople: 4,
+      cookTime: 40,
+      cookTimeUnit: "Minutes",
+      ingredients: [
+        {
+          amount: 1,
+          amountDen: 1,
+          unit: "can",
+          name: "Chickpeas",
+          consistency: "cubed",
+          meta: "",
+        },
+        {
+          amountNum: 3,
+          amountDen: 1,
+          unit: "",
+          name: "tomatoes",
+          consistency: "",
+          meta: "cubed",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "",
+          name: "onion",
+          consistency: "grated",
+          meta: "",
+        },
+        {
+          amountNum: 3,
+          amountDen: 1,
+          unit: "cloves",
+          name: "garlic",
+          consistency: "grated",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "cup",
+          name: "butternut squash",
+          consistency: "diced",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "",
+          name: "zucchini",
+          consistency: "diced",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "tbs",
+          name: "chili paste",
+          consistency: "",
+          meta: "Please adjust to your spice level",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "tsp",
+          name: "paprika",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "tsp",
+          name: "cumin",
+          consistency: "",
+          meta: "soaked in warm water and blendid to paste",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "tsp",
+          name: "coriander powder",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "tsp",
+          name: "dried oregano",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 2,
+          unit: "tsp",
+          name: "dried thyme",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 4,
+          unit: "tsp",
+          name: "cinnamon",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "tbs",
+          name: "sugar (optional)",
+          consistency: "",
+          meta: "",
+        },
+        {
+          amountNum: 1,
+          amountDen: 1,
+          unit: "",
+          name: "Juice of 1/2 lemon",
+          consistency: "",
+          meta: "",
+        },
+      ],
+      preparation: [
+        {
+          step: 1,
+          description:
+            "If you want to use fresh tomatoes over a canned puree, first score an 'x' on the bottom of the tomatoes. Submerge them in a pot of water, cover it and bring to a rapid boil. As soon as the tomatoes blister and the peel starts loosening off, turn the heat off, drain the water and allow them to cool before peeling and pureeing them in a blender/food processor. To prep the vegetables, grate (or pulse in a food processor) one medium onion and the garlic cloves. Peel and dice about a cup of butternut squash and one zucchini (leaving the skin on the zucchini). And finely chop a generous handful of parsley. Heat the olive oil in a deep pan, then add the grated onion and saute for 3-4 minutes until they turn soft and translucent. Then toss in the grated garlic and chili paste and saute the mix for another minute or so.",
+          stepImage: "http://picturetherecipe.com/wp-content/uploads/2015/02/Moroccan-Chickpea-Stew-with-Butternut-Squash-by-PictureTheRecipe-com.jpg",
+        },
+        {
+          step: 2,
+          description:
+            "Add the paprika, cumin, coriander powder, oregano, thyme and cinnamon powder. Give it a quick stir!) to fry off the spices so they don't have that raw taste. Pour in the tomato puree and mix everything well scraping any brown bits on the bottom of the pan. Season the mixture with salt and pepper according to your taste. Next add in the butternut squash, chickpeas with the water and zucchini into the pot",
+          stepImage: "http://picturetherecipe.com/wp-content/uploads/2015/02/Moroccan-Chickpea-Stew-with-Butternut-Squash-by-PictureTheRecipe-com.jpg",
+        },
+        {
+          step: 3,
+          description:
+            "Stir in 1 tbsp of sugar (optional), the juice of 1/4 of a lemon and pinch of the freshly cut parsley (reserving the other 1/4 lemon and parsley for a garnish). Cover and let the stew simmer on low for 15-20 minutes stirring occasionally until the butternut squash is tender and fork ready. When you're ready to serve sprinkle in some sumac (a middle eastern dried and powdered berry that's tangy, similar to juniper berry), a squeeze of lemon juice and the remaining chopped parsley. Serve hot over couscous or rice.",
+          stepImage: "http://picturetherecipe.com/wp-content/uploads/2015/02/Moroccan-Chickpea-Stew-with-Butternut-Squash-by-PictureTheRecipe-com.jpg",
+        },
+      ],
+      filters: {
+        healthy: true,
+        seasonal: false,
+        min30: false,
+        glutenFree: false,
+        vegetarian: true,
+        breakfast: false,
+        lunch: true,
+        dinner: true,
+        dessert: false,
+        snack: false,
+        indian: true,
+        thai: false,
+        japanese: false,
+        french: false,
+        italian: false,
+        mexican: false,
+        american: false,
+        canadian: false,
+        korean: false,
+        polish: false,
+      },
+      comments: [
+        
+      ],
+      tags: ["Moroccan", "lime juice", "peas"]
+    },
   ]
   await Recipe.insertMany(recipes);
   console.log("Created recipes!");

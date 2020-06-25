@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/results/:filter" component={Results} />
+        <Route exact path="/results" component={Results} />
         <Route path="/recipe/:id" component={RecipeDetails} />
         <Route exact path="/addrecipe" component={AddRecipe} />
       </Switch>

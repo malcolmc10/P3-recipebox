@@ -10,6 +10,7 @@ router.get("/recipes/filter", control.filter);
 // Recipes
 router.get("/recipes", control.getRecipes);
 router.get("/recipes/:id", control.getRecipe);
+
 router.post("/recipes", control.createRecipe);
 router.put("/recipes/:id", control.updateRecipe);
 router.delete("/recipes/:id", control.deleteRecipe);

@@ -66,6 +66,16 @@ const deleteRecipe = async (req, res) => {
   }
 };
 
+const search = async (req, res) => {
+  try {
+    const recipes = await Recipe.find({ tags: new RegExp(`^${req.query.q}$`, 'i') })
+    return res.json(recipes)
+
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+}
+
 const filter = async (req, res) => {
   try {
     let result = "[";
@@ -114,11 +124,12 @@ const deleteComment = async (req, res) => {
     recipe.comments.id(id).remove()
     recipe.save()
     return res.status(200).json(recipe.comments);
+
+
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 };
-
 
 module.exports = {
   createRecipe,
@@ -127,7 +138,7 @@ module.exports = {
   updateRecipe,
   deleteRecipe,
   filter,
-  addComment,
-  updateComment,
+  search,
+  updateComments,
   deleteComment
 };
