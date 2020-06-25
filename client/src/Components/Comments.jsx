@@ -8,6 +8,11 @@ export default function Comments(props) {
 
   const [commentLength, setCommentsLength] = useState(5)
 
+  let commentsArr = recipe.comments && recipe.comments.reverse()
+
+  console.log(commentsArr)
+  
+
   const increaseLength = () => {
     const newLength = commentLength + 5
     setCommentsLength(newLength)
