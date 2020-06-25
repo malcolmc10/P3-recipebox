@@ -6,7 +6,7 @@ import closeIcon from '../assets/zondicons/close.svg'
 import Search from './Search'
 
 
-export default function Header() {
+export default function Header(props) {
   const [showSearch, setShowSearch] = useState(false)
 
   return (
@@ -47,13 +47,13 @@ export default function Header() {
         </li>
 
         <li>
-          <a href="#header" onClick={() => setShowSearch(showSearch => !showSearch)}>
+          <button onClick={() => setShowSearch(showSearch => !showSearch)}>
             <img src={showSearch ? closeIcon : searchIcon} alt="search icon" class="w-4" />
-          </a>
+          </button>
         </li>
 
       </ul>
-      {showSearch ? <Search /> : ''}
+      {showSearch ? <Search setFilters={props.setFilters} setQuery={props.setQuery} /> : ''}
     </div>
   )
 }
