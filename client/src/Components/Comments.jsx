@@ -17,16 +17,14 @@ export default function Comments(props) {
       <div class="content-center">
 
         <AddComment recipe={recipe} setRecipe={setRecipe} id={id} />
-
-
-        {recipe.comments && recipe.comments.reverse().slice(0, commentLength).map((comment, index) =>
+        {recipe.comments && recipe.comments.slice(0, commentLength).map((comment, index) =>
           <Comment recipe={recipe} setRecipe={setRecipe} comment={comment} index={index} />
         )}
-     
+        {/* <div> */}
           <button className="bg-orange-400 rounded-full py-1 px-5  mx-4 outline-none" onClick={increaseLength}>
             Show More...
           </button>
-
+        {/* </div> */}
 
       </div>
     </>
