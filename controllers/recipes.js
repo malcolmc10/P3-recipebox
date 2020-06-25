@@ -91,18 +91,32 @@ const filter = async (req, res) => {
   }
 };
 
-const updateComments = async (req, res) => {
+const addComment = async (req, res) => {
   try {
-    const newComment = req.body
     const { id } = req.params;
+    const comment = req.body;
     const recipe = await Recipe.findByIdAndUpdate(
-      id, { $push: { comments: newComment } }, { new: true }
-    )
+      id, { $push: { comments: comment } }, { new: true }
+    );
+    return res.json(recipe)
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+const updateComment = async (req, res) => {
+  try {
+    const comment = req.body
+    const { id, recipeId } = req.params;
+    const recipe = await Recipe.findById(recipeId)
+    recipe.comments.id(id) = comment
+    await recipe.save()
     return res.json(recipe)
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 }
+
 const deleteComment = async (req, res) => {
   try {
     const { id, recipeId } = req.params;

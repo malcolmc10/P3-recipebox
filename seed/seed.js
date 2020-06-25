@@ -143,11 +143,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "Dan Dalgatov",
-          commentDetails: "This dish is perfect for a hungry developer",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["chicken", "stew", "soup"]
     },
@@ -307,11 +303,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "Dan Dalgatov",
-          commentDetails: "This dish is perfect for a hungry developer",
-          commentTime: "1592459790537",
-        },
+       
       ],
       tags: ["chicken", "italian", "cheese"]
     },
@@ -443,11 +435,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "Dan Dalgatov",
-          commentDetails: "This dish is perfect for a hungry developer",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["rice", "spanish"]
     },
@@ -563,11 +551,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "Dan Dalgatov",
-          commentDetails: "This dish is perfect for a hungry developer",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["bread", "italian", "gluten", "sweet"]
     },
@@ -683,11 +667,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "Dan Dalgatov",
-          commentDetails: "This dish is perfect for a hungry developer",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["veal", "italian", "gluten"]
     },
@@ -875,11 +855,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "Dan Dalgatov",
-          commentDetails: "This dish is perfect for a hungry developer",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["bread", "italian", "gluten"]
     },
@@ -987,11 +963,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "Chris Knobling",
-          commentDetails: "I want to bathe in a tub of this.",
-          commentTime: "1592459790537",
-        },
+      
       ],
       tags: ["baked", "ribs", "korean", "beef"]
     },
@@ -1133,11 +1105,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["korean", "beef", "tacos"]
     },
@@ -1243,11 +1211,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+      
       ],
       tags: ["kimchi", "pancake", "korean"]
     },
@@ -1351,11 +1315,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+      
       ],
       tags: ["tofu", "korean", "spicy", "crunchy"]
     },
@@ -1491,11 +1451,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+      
       ],
       tags: ["dip", "artichoke", "spinach", "cheese"]
     },
@@ -1638,11 +1594,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+      
       ],
       tags: ["jalapeno", "cheese", "bacon"]
     },
@@ -1754,11 +1706,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+      
       ],
       tags: ["clams", "seafood", "bacon"]
     },
@@ -1918,11 +1866,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["pork", "indian", "potatoes"]
     },
@@ -2057,11 +2001,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "Sam Soda",
-          commentDetails: "They make me want to move to Canada.",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["meatballs", "eggs", "cheese"]
     },
@@ -2244,11 +2184,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["French", "beef", "pork", "patatoes"]
     },
@@ -2416,11 +2352,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["indian", "cheese", "spinach"]
     },
@@ -2595,11 +2527,7 @@ const main = async () => {
         polish: false,
       },
       comments: [
-        {
-          commentAuthor: "French Montana",
-          commentDetails: "I'll write a song about these babies.",
-          commentTime: "1592459790537",
-        },
+        
       ],
       tags: ["Moroccan", "lime juice", "peas"]
     },

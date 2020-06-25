@@ -11,7 +11,7 @@ export default function Ingredient(props) {
     }
   };
 
-  console.log(props)
+
 
   return (
     <>

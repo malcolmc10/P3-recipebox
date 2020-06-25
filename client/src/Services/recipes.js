@@ -54,6 +54,9 @@ export const filter = async (filter) => {
   }
 }
 
+<<<<<<< HEAD
+export const addComment = async (id, comment) => {
+=======
 export const search = async (query) => {
   try {
     const response = await api.get('/recipes/search', { params: query })
@@ -64,8 +67,29 @@ export const search = async (query) => {
 }
 
 export const addCommentAPI = async (id, comment) => {
+>>>>>>> 896dccb1f43ecb8d3542138e3ddd4d6b344ca6db
   try {
-    const response = await api.put(`/recipes/${id}/comments`, comment)
+    const response = await api.post(`/recipes/${id}/comments`, comment)
+    console.log(id, comment)
+    console.log(response.data)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
+
+export const updateComment = async (recipeId, id, comment) => {
+  try {
+    const response = await api.put(`/recipes/${recipeId}/comments/${id}`, comment)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
+
+export const deleteComment = async (recipeId, id) => {
+  try {
+    const response = await api.delete(`/recipes/${recipeId}/comments/${id}`)
     return response.data
   } catch (error) {
     throw error
