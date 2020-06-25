@@ -6,7 +6,7 @@ export default function Ingredient(props) {
   const amountToFraction = function( amountNum, amountDen ) {
     if (amountDen === 1) {
       return `${amountNum}`
-    } else {
+    } else if (amountDen > 1) {
       return `${amountNum}/${amountDen}`
     }
   };

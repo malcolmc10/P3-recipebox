@@ -96,16 +96,53 @@ const addComment = async (req, res) => {
 
 const updateComment = async (req, res) => {
   try {
-    const comment = req.body
+    let comment = req.body
     const { id, recipeId } = req.params;
     const recipe = await Recipe.findById(recipeId)
-    recipe.comments.id(id) = comment
-    await recipe.save()
+    await recipe.comments.findByIdAndUpdate(
+      id,
+      comment,
+      (err, comment) => {
+        if (err) {
+          return res.status(500).json({ error: err.message })
+        }
+        if (!comment) {
+          return res.status(404).json({ message: 'Comment not found!' })
+        }
+        res.status(200).json(comment)
+      }
+    )
+  
+    recipe.save()
     return res.json(recipe)
+
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-}
+
+};
+
+
+// const updateRecipe = async (req, res) => {
+//   const { id } = req.params;
+//   await Recipe.findByIdAndUpdate(
+//     id,
+//     req.body,
+//     { new: true },
+//     (error, recipe) => {
+//       if (error) {
+//         return res.status(500).json({ error: error.message });
+//       }
+//       if (!recipe) {
+//         return res.status(404).json({ message: "Recipe not found!" });
+//       }
+//       res.status(200).json(recipe);
+//     }
+//   );
+// };
+
+
+
 
 const deleteComment = async (req, res) => {
   try {
