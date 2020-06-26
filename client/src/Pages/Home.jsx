@@ -8,12 +8,11 @@ class Home extends Component {
   render() {
     return (
       <div className="container bg-white mx-auto px-4 font-serif">
-        <Header />
         <HomeCover />
         <TopPicks />
-        <Footer/>
+        <Footer />
       </div>
-      
+
     );
   }
 }

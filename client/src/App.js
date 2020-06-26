@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,19 +9,25 @@ import Home from './Pages/Home'
 import Results from './Pages/Results'
 import RecipeDetails from './Pages/RecipeDetails'
 import AddRecipe from './Pages/AddRecipe'
+import Header from './Shared/Header'
 
 function App() {
 
+  const [query, setQuery] = useState('')
+  const [filters, setFilters] = useState(null)
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/results" component={Results} />
-        <Route path="/recipe/:id" component={RecipeDetails} />
-        <Route exact path="/addrecipe" component={AddRecipe} />
-      </Switch>
-    </Router>
+    <div className="container bg-white mx-auto px-4 font-serif">
+      <Router>
+        <Header setQuery={setQuery} setFilters={setFilters} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/results" render={() => <Results query={query} filters={filters} />} />
+          <Route path="/recipe/:id" component={RecipeDetails} />
+          <Route exact path="/addrecipe" component={AddRecipe} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
