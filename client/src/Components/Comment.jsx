@@ -30,6 +30,7 @@ export default function Comment(props) {
   const handleSubmitClick = () => {
     const cloneRecipe = { ...recipe }
     cloneRecipe.comments[index] = comment
+    cloneRecipe.comments.reverse()
     setRecipe(cloneRecipe)
     // updateRecipe(recipe._id, cloneRecipe)
     updateComment(recipe._id, _id, comment)
@@ -40,6 +41,7 @@ export default function Comment(props) {
   const removeComment = () => {
     const cloneRecipe = { ...recipe }
     cloneRecipe.comments.splice(index, 1)
+    cloneRecipe.comments.reverse()
     setRecipe(cloneRecipe)
     deleteComment(recipe._id, _id)
   }
