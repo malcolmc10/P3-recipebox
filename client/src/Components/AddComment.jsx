@@ -11,7 +11,7 @@ export default function AddComment(props) {
     setComment({ ...comment, [name]: value })
   }
 
-  
+  //addComment returns array and not a specific comment
   const submitComment = async (e) => {
     e.preventDefault()
     const date = new Date().toLocaleString()
