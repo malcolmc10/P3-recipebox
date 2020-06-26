@@ -9,9 +9,10 @@ class Home extends Component {
       <div className="container bg-white mx-auto px-4 font-serif">
         <HomeCover />
         <TopPicks />
+        <Footer />
       </div>
 
-    )
+    );
   }
 }
 
