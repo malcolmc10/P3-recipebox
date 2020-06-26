@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from '../Shared/Header'
 import HomeCover from '../Components/HomeCover'
 import TopPicks from '../Components/TopPicks'
-import Footer from '../Shared/Footer'
+
 
 class Home extends Component {
   render() {
@@ -11,7 +11,7 @@ class Home extends Component {
         <Header />
         <HomeCover />
         <TopPicks />
-        <Footer/>
+       
       </div>
       
     );
