@@ -19,7 +19,6 @@ export default function TopPicks() {
       <div className="flex flex-wrap justify-evenly">
 
       {recipes && recipes.slice(0, 10).map((recipe, i) => <Recipe recipe={recipe} key={i} />)}
-
       </div>
     </div>
   )

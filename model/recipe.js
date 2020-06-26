@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const mongoose = require("mongoose")
+const Schema = mongoose.Schema
 const Recipe = new Schema(
   {
     title: { type: String, required: true },
@@ -57,5 +57,5 @@ const Recipe = new Schema(
     tags:{ type: Array, required: false }
   },
   { timestamps: true }
-);
-module.exports = mongoose.model("recipe", Recipe);
+)
+module.exports = mongoose.model("recipe", Recipe)

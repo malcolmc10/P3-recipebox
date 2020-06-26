@@ -54,24 +54,24 @@ export const filter = async (filter) => {
   }
 }
 
-<<<<<<< HEAD
-export const addComment = async (id, comment) => {
-=======
-export const search = async (query) => {
+export const search = async (search) => {
   try {
-    const response = await api.get('/recipes/search', { params: query })
+    const response = await api.get('/recipes/search', {
+      params: {
+        q: search.query,
+        filters: search.filters
+      }
+    })
+    // const response = await api.get('/recipes/search', search)
     return response.data
   } catch (error) {
     throw error
   }
 }
 
-export const addCommentAPI = async (id, comment) => {
->>>>>>> 896dccb1f43ecb8d3542138e3ddd4d6b344ca6db
+export const addComment = async (id, comment) => {
   try {
     const response = await api.post(`/recipes/${id}/comments`, comment)
-    console.log(id, comment)
-    console.log(response.data)
     return response.data
   } catch (error) {
     throw error
