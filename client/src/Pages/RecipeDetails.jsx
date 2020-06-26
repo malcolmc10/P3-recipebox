@@ -8,7 +8,6 @@ import AmountAndTime from '../Components/AmountAndTime'
 import Ingredient from '../Components/Ingredient'
 import Step from '../Components/Step'
 import Comments from '../Components/Comments'
-import Footer from '../Shared/Footer'
 
 export default function RecipeDetails() {
 
