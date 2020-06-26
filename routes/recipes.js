@@ -16,6 +16,7 @@ router.put("/recipes/:id", control.updateRecipe)
 router.delete("/recipes/:id", control.deleteRecipe)
 
 //* Comments
+router.get("/recipes/:recipeId/comments", control.getComment)
 router.post("/recipes/:id/comments", control.addComment)
 router.put("/recipes/:recipeId/comments/:id", control.updateComment)
 router.delete("/recipes/:recipeId/comments/:id", control.deleteComment)

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { addComment } from "../Services/recipes"
+import { getComment, addComment } from "../Services/recipes"
 
 export default function AddComment(props) {
 
@@ -11,12 +11,14 @@ export default function AddComment(props) {
     setComment({ ...comment, [name]: value })
   }
 
+  
   const submitComment = async (e) => {
     e.preventDefault()
     const date = new Date().toLocaleString()
-    addComment(recipe._id, { ...comment, commentTime: date })
+    await addComment(recipe._id, { ...comment, commentTime: date })
+    let commentArr = await getComment(recipe._id)
     const cloneRecipe = { ...recipe }
-    cloneRecipe.comments.reverse().push({ ...comment, commentTime: date })
+    cloneRecipe.comments = commentArr
     setRecipe(cloneRecipe)
     document.getElementById('author').value = ''
     document.getElementById('content').value = ''

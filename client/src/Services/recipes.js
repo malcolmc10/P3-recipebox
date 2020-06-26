@@ -69,6 +69,16 @@ export const search = async (search) => {
   }
 }
 
+export const getComment = async (recipeId) => {
+  try {
+    const response = await api.get(`/recipes/${recipeId}/comments`)
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}
+
+
 export const addComment = async (id, comment) => {
   try {
     const response = await api.post(`/recipes/${id}/comments`, comment)
