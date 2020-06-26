@@ -9,14 +9,12 @@ import AddStep from '../Components/AddStep'
 export default function AddRecipe() {
   return (
     <>
-      <Header />
-
       <div className="my-5 mx-auto max-w-xl">
         <h1 className="text-3xl text-bold text-gray-400 mb-5">Add Your Recipe Here</h1>
         <form>
 
           <div className="flex flex-row ">
-            <img className="h-auto w-2/6" src="https://lh3.googleusercontent.com/proxy/NXC0ggDM_VA7lfjNGfguZvvkDtrr3qQoiTh74big1Bs8CvHV7faPjqjyrI7aPgDPcVz0jGeTHtm8kxpDRgVAgJGu1T-XtcOOuCZraIs4OMO4mv2zhQp5IEcNKclthceXqms6ig0" alt="add photo" />
+            <img className="h-auto w-2/6" src="https://lh3.googleusercontent.com/proxy/NXC0ggDM_VA7lfjNGfguZvvkDtrr3qQoiTh74big1Bs8CvHV7faPjqjyrI7aPgDPcVz0jGeTHtm8kxpDRgVAgJGu1T-XtcOOuCZraIs4OMO4mv2zhQp5IEcNKclthceXqms6ig0" alt="add" />
 
             <div className="w-full">
               <input className=" border border-gray-400 rounded-lg py-2 px-4 m-5 block w-full appearance-none" type="text" placeholder="Name of Recipe" />
@@ -58,7 +56,6 @@ export default function AddRecipe() {
         </form>
 
       </div>
-      <Footer />
     </>
   )
 }

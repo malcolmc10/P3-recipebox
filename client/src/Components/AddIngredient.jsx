@@ -3,7 +3,6 @@ import React from 'react'
 export default function AddIngredient() {
     return (
         <>
-
             <div className="Ingredients  flex flex-col">
                 <div className="flex flex-row justify-between">
                     <h4>Ingredient Measurement</h4>

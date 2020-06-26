@@ -1,6 +1,6 @@
-const db = require("../db/connection");
-const Recipe = require("../model/recipe.js");
-db.on("error", console.error.bind(console, "MongoDB connection error:"));
+const db = require("../db/connection")
+const Recipe = require("../model/recipe.js")
+db.on("error", console.error.bind(console, "MongoDB connection error:"))
 
 const main = async () => {
   const recipes = [
@@ -2530,11 +2530,11 @@ const main = async () => {
       tags: ["Moroccan", "lime juice", "peas"]
     },
   ]
-  await Recipe.insertMany(recipes);
-  console.log("Created recipes!");
-};
+  await Recipe.insertMany(recipes)
+  console.log("Created recipes!")
+}
 const run = async () => {
-  await main();
-  db.close();
-};
-run();
+  await main()
+  db.close()
+}
+run()

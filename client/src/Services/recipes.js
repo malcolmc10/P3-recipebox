@@ -72,8 +72,6 @@ export const search = async (search) => {
 export const addComment = async (id, comment) => {
   try {
     const response = await api.post(`/recipes/${id}/comments`, comment)
-    console.log(id, comment)
-    console.log(response.data)
     return response.data
   } catch (error) {
     throw error

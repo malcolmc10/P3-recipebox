@@ -8,7 +8,7 @@ export default function FilterMenu(props) {
 
   const [filters, setFilters] = useState({})
 
-  let history = useHistory();
+  let history = useHistory()
 
   const handleApply = () => {
     history.push('/results')

@@ -1,11 +1,11 @@
-const express = require("express");
-const cors = require("cors"); 
-const logger = require("morgan");
-const bodyParser = require("body-parser");
+const express = require("express")
+const cors = require("cors") 
+const logger = require("morgan")
+const bodyParser = require("body-parser")
 const router = require('./routes/recipes')
 const data = require("./db/connection")
-const PORT = process.env.PORT || 3000;
-const app = express();
+const PORT = process.env.PORT || 3000
+const app = express()
 
 
 app.use(cors())

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +11,7 @@ import Results from './Pages/Results'
 import RecipeDetails from './Pages/RecipeDetails'
 import AddRecipe from './Pages/AddRecipe'
 import Header from './Shared/Header'
+import Footer from './Shared/Footer'
 
 function App() {
 
@@ -26,9 +28,10 @@ function App() {
           <Route path="/recipe/:id" component={RecipeDetails} />
           <Route exact path="/addrecipe" component={AddRecipe} />
         </Switch>
+        <Footer />
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

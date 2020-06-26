@@ -23,7 +23,6 @@ export default function Results(props) {
         {recipes && recipes.map((recipe) => <Recipe key={recipe._id} recipe={recipe} />)}
 
       </div>
-      <Footer />
     </div>
   )
 }
