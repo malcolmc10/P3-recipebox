@@ -31,9 +31,8 @@ Team values and expectations can be found on our project's [Group Expectation Se
 
 ## Sprint 1
 
-> Sprint 1 should result in a well-planned and easily-communicated project, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_Recipe Box sprint one should include basic filtering functionality, comments, and recipe detail rendering._
 
 <br>
 
@@ -64,7 +63,7 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 #### Database Schema 
 
 ```
- {
+{
     title: { type: String, required: true },
     coverImage: { type: String, required: false },
     servesPeople: { type: Number, required: false },
@@ -72,63 +71,74 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     cookTimeUnit: { type: String, required: false },
     score: { type: Number, required: false },
     ingredients: [
-        {
-            amount: { type: Number, required: false },
-            unit: { type: String, required: false },
-            name: { type: String, required: true },
-            consistency: { type: String, required: false },
-            meta: { type: String, required: false }
-        }
+      {
+        amountNum: { type: Number, required: false },
+        amountDen: { type: Number,required: false },
+        unit: { type: String, required: false },
+        name: { type: String, required: true },
+        consistency: { type: String, required: false },
+        meta: { type: String, required: false },
+      },
     ],
     preparation: [
-        {
-            step: { type: Number, required: true },
-            description: { type: String, required: true },
-            stepImage: { type: String, required: false }
-        }
+      {
+        step: { type: Number, required: true },
+        description: { type: String, required: true },
+        stepImage: { type: String, required: false },
+      },
     ],
-    filters: [
-        {
-            healthy: { type: Boolean, required: false },
-            seasonal: { type: Boolean, required: false },
-            min30: { type: Boolean, required: false },
-            glutenFree: { type: Boolean, required: false },
-            vegetarian: { type: Boolean, required: false },
-            breakfast: { type: Boolean, required: false },
-            lunch: { type: Boolean, required: false },
-            dinner: { type: Boolean, required: false },
-            dessert: { type: Boolean, required: false },
-            snack: { type: Boolean, required: false },
-            indian: { type: Boolean, required: false },
-            thai: { type: Boolean, required: false },
-            japanese: { type: Boolean, required: false },
-            french: { type: Boolean, required: false },
-            italian: { type: Boolean, required: false },
-            mexican: { type: Boolean, required: false },
-            american: { type: Boolean, required: false },
-            canadian: { type: Boolean, required: false },
-            korean: { type: Boolean, required: false },
-            polish: { type: Boolean, required: false }
-        }
-    ],
+    filters: {
+      healthy: { type: Boolean, required: false },
+      seasonal: { type: Boolean, required: false },
+      min30: { type: Boolean, required: false },
+      glutenFree: { type: Boolean, required: false },
+      vegetarian: { type: Boolean, required: false },
+      breakfast: { type: Boolean, required: false },
+      lunch: { type: Boolean, required: false },
+      dinner: { type: Boolean, required: false },
+      dessert: { type: Boolean, required: false },
+      snack: { type: Boolean, required: false },
+      indian: { type: Boolean, required: false },
+      thai: { type: Boolean, required: false },
+      japanese: { type: Boolean, required: false },
+      french: { type: Boolean, required: false },
+      italian: { type: Boolean, required: false },
+      mexican: { type: Boolean, required: false },
+      american: { type: Boolean, required: false },
+      canadian: { type: Boolean, required: false },
+      korean: { type: Boolean, required: false },
+      polish: { type: Boolean, required: false },
+    },
     comments: [
-        {
-            commentAuthor: { type: String, required: true },
-            commentDetails: { type: String, required: true },
-            commentTime: { type: Number, required: true }
-        }
-    ]
-}
+      {
+        commentAuthor: { type: String, required: true },
+        commentDetails: { type: String, required: true },
+        commentTime: { type: String, required: true },
+      },
+    ],
+    tags:{ type: Array, required: false }
+  }
 ```
 
 #### Express Routes
 
 ``` 
-router.get("/recipes", control.getRecipes);
-router.get("/recipes/:id", control.getRecipe);
-router.post("/recipes", control.createRecipe);
-router.put("/recipes/:id", control.updateRecipe);
+//* Search
+router.get("/recipes/filter", control.filter)
+
+//* Recipes
+router.get("/recipes", control.getRecipes)
+router.get("/recipes/:id", control.getRecipe)
+
+router.post("/recipes", control.createRecipe)
+router.put("/recipes/:id", control.updateRecipe)
 router.delete("/recipes/:id", control.deleteRecipe)
+
+//* Comments
+router.get("/recipes/:recipeId/comments", control.getComment)
+router.post("/recipes/:id/comments", control.addComment)
+router.put("/recipes/:recipeId/comments/:id", control.updateComment)
+router.delete("/recipes/:recipeId/comments/:id", control.deleteComment)
 ```
 
 <br>
@@ -139,19 +149,21 @@ router.delete("/recipes/:id", control.deleteRecipe)
 
 |    Library     | Description                                |
 | :------------: | :----------------------------------------- |
-|     React      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  React Router  | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Express     | _Lorem ipsum dolor sit amet, consectetur._ |
-| Express Router | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Cors    | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Mongoose    | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Morgan    | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Body Parser    | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Nodemon    | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Tailwind    | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Axios    | _Lorem ipsum dolor sit amet, consectetur._ |
-
-
+|     React      | _Building user interface._ |
+|  React Router  | _Collection of navigational components._ |
+|    Express     | _Minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications._ |
+| Express Router | _Define routing using methods of the Express app._ |
+|    Cors    | _Connect Express middleware._ |
+|    Mongoose    | _MongoDB wrapper._ |
+|    Morgan    | _Keeps track of backend requests._ |
+|    Body Parser    | _Formats data for JSON_ |
+|    Nodemon    | _Developement server._ |
+|    Tailwind    | _CSS library._ |
+|    Axios    | _Sends API calls._ |
+|    Fontawesome    | _Imports svg icons._ |
+|    Jest  | _Allows for testing._ |
+|    Query String  | _Parse a query string into an object. Leading ? or # are ignored, so you can pass location.search or location.hash directly._ |
+|    Underscore  | _A suite of 100+ specialized functions/_ |
 
 <br>
 
@@ -159,16 +171,21 @@ router.delete("/recipes/:id", control.deleteRecipe)
 
 ## Plan Your Next Sprint
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your next sprint. This will be helpful when you return to your project after graduation!
+1. Updating schema to separate comments, recipes, and users.
+2. Allow comment reply. 
+3. Adding more recipes.
+4. Creating Add Recipe page. 
+5. Update search functionality. 
+6. Update layout. 
+7. Add authentication. 
+8. Continuous deployement. 
 
 ***
 
 ## Code Issues & Resolutions
 
-> Use this section to document and keep track of all major issues encountered and their resolution, if you'd like.
+1. get search functionality. 
 
 ***
 
-## Change Log
 
-> Use this section to document and keep track of any changes that need to be made to your planned Sprint and provide reasons.
