@@ -861,7 +861,7 @@ const main = async () => {
     },
     {
       title: "Oven Baked Korean BBQ Beef Ribs",
-      coverImage: "https://i.imgur.com/3znSL1M.png",
+      coverImage: "https://mykoreankitchen.com/wp-content/uploads/2016/10/1.-Oven-Baked-Korean-BBQ-Beef-Ribs-Recipe.jpg",
       servesPeople: 2,
       cookTime: 1,
       cookTimeUnit: "Hour",
@@ -969,7 +969,7 @@ const main = async () => {
     },
     {
       title: "Beef Bulgogi Korean Tacos",
-      coverImage: "https://i.imgur.com/3znSL1M.png",
+      coverImage: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/4/16/0/DV1906H_Korean-Bulgogi-Taco-Recipe_s4x3.jpg.rend.hgtvcom.826.620.suffix/1397662016005.jpeg",
       servesPeople: 8,
       cookTime: 1,
       cookTimeUnit: "Hour",
@@ -1067,19 +1067,19 @@ const main = async () => {
           step: 1,
           description:
             "In 1-gallon resealable food storage plastic bag, mix beef and marinade ingredients. Seal bag. Refrigerate 30 mins.",
-          stepImage: "https://i.imgur.com/mVgiec0.png",
+          stepImage: "https://natashaskitchen.com/wp-content/uploads/2017/04/Korean-Beef-Tacos-4.jpg",
         },
         {
           step: 2,
           description:
             "Meanwhile, in blender, place spicy salsa ingredients. Cover; blend on medium speed until smooth. Pour into small bowl. Set aside, in large bowl, mix all slaw ingredients except lettuce until well mixed. Set aside.",
-          stepImage: "https://i.imgur.com/J6UU6Yw.png",
+          stepImage: "https://natashaskitchen.com/wp-content/uploads/2017/04/Korean-Beef-Tacos-4.jpg",
         },
         {
           step: 3,
           description:
             "Drain beef; discard marinade. Heat 12-inch nonstick skillet over medium-high heat. Cook beef in skillet 2 to 3 minutes, stirring frequently, until brown. Toss lettuce in slaw mixture. Spoon beef on warm tortillas. Drizzle with spicy salsa, and top with slaw. Sprinkle tops with sesame seed.",
-          stepImage: "https://i.imgur.com/7QIhXPs.png",
+          stepImage: "https://natashaskitchen.com/wp-content/uploads/2017/04/Korean-Beef-Tacos-4.jpg",
         },
       ],
       filters: {
