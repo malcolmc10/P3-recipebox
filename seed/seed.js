@@ -1215,7 +1215,7 @@ const main = async () => {
     },
     {
       title: "Sweet and crunchy tofu",
-      coverImage: "https://www.maangchi.com/wp-content/uploads/2020/02/kimchipancake-620x349.jpg",
+      coverImage: "https://www.maangchi.com/wp-content/uploads/2020/04/dubugangjeong-insta-650x650.jpg",
       servesPeople: 4,
       cookTime: 20,
       cookTimeUnit: "Minutes",
@@ -1275,7 +1275,7 @@ const main = async () => {
           step: 1,
           description:
             "Combine all the seasoning sauce ingredients in a skillet. Heat over medium high heat, stirring for about 1 to 2 minutes until bubbling. Remove from the heat and set the skillet aside. We’ll reheat this just before serving. Cut the tofu into 1 x 1½ inch bite sized pieces. Pat dry with kitchen towel or paper towel.Gently put the tofu into a plastic bag and add the potato starch. Seal the bag and gently turn it over until the tofu is well and evenly coated with the starch. Remove each piece from the bag individually and transfer to a large plate or a cutting board lined with plastic wrap, leaving some space between the pieces.",
-          stepImage: "https://www.maangchi.com/wp-content/uploads/2020/02/kimchijeon-pan-620x349.jpg",
+          stepImage: "https://www.maangchi.com/wp-content/uploads/2020/04/cut-tofu-620x349.jpg",
         },
         {
           step: 2,
@@ -1852,13 +1852,13 @@ const main = async () => {
         dinner: true,
         dessert: false,
         snack: true,
-        indian: false,
+        indian: true,
         thai: false,
         japanese: false,
         french: false,
         italian: false,
         mexican: false,
-        american: true,
+        american: false,
         canadian: false,
         korean: false,
         polish: false,
