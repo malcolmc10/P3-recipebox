@@ -73,7 +73,7 @@ export default function RecipeDetails() {
 
           <h3 class=" mb-5">You're Finished!</h3>
           <div>
-            <Comments recipe={recipe} setRecipe={setRecipe} id={id} />
+            <Comments comments={comments && comments.reverse()} recipe={recipe} setRecipe={setRecipe} id={id} />
           </div>
 
         </div>
