@@ -1,6 +1,7 @@
 const Recipe = require("../model/recipe.js")
 const db = require("../db/connection")
 const mongoose = require("mongoose")
+const _ = require('underscore')
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"))
 
@@ -69,7 +70,29 @@ const deleteRecipe = async (req, res) => {
 
 const search = async (req, res) => {
   try {
-    const recipes = await Recipe.find({ tags: new RegExp(`^${req.query.q}$`, 'i') })
+    const searchCriteria = {}
+
+    // Match a tag from the documents in db if q coming from query is not empty Or make it to match any string (returns all recipes)
+    searchCriteria.tags = new RegExp(`^${req.query.q !== '' ? req.query.q : '[a-zA-Z]*'}$`, 'i')
+
+    const filtersObj = req.query.filters && JSON.parse(req.query.filters)
+
+    // Make sure that the filters from the query is defined and the object produced after convertion (string to Object) is not empty
+    if (req.query.filters != undefined && !_.isEmpty(filtersObj)) {
+
+      // input Example: {healthy: true, moroccan: true}
+      let result = "["
+      for (let [key, value] of Object.entries(filtersObj)) {
+        result += `{"filters.${key}": ${value}},`
+      }
+      result = result.substring(0, result.length - 1) + "]"
+      // output: [{"filters.healthy": true},{"filters.moroccan": true}]
+
+      searchCriteria.$and = JSON.parse(result)
+    }
+
+    const recipes = await Recipe.find(searchCriteria)
+
     return res.json(recipes)
 
   } catch (err) {
@@ -77,20 +100,20 @@ const search = async (req, res) => {
   }
 }
 
-const filter = async (req, res) => {
-  try {
-    let result = "["
-    for (let [key, value] of Object.entries(req.body)) {
-      result += `{"filters.${key}": ${value}},`
-    }
-    result = result.substring(0, result.length - 1) + "]"
+// const filter = async (req, res) => {
+//   try {
+//     let result = "["
+//     for (let [key, value] of Object.entries(req.body)) {
+//       result += `{"filters.${key}": ${value}},`
+//     }
+//     result = result.substring(0, result.length - 1) + "]"
 
-    const filteredRecipes = await Recipe.find({ $and: JSON.parse(result) })
-    return res.json(filteredRecipes)
-  } catch (error) {
-    res.status(500).json({ error: error.message })
-  }
-}
+//     const filteredRecipes = await Recipe.find({ $and: JSON.parse(result) })
+//     return res.json(filteredRecipes)
+//   } catch (error) {
+//     res.status(500).json({ error: error.message })
+//   }
+// }
 
 const getComment = async (req, res) => {
   try {
@@ -145,7 +168,7 @@ const deleteComment = async (req, res) => {
 }
 
 module.exports = {
-  filter,
+  // filter,
   search,
 
   getRecipes,
