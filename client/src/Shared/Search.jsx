@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import SearchBar from './SearchBar'
 import FilterMenu from './FilterMenu'
 
-export default function Search() {
+export default function Search(props) {
+
+
+
 
   const [showFilterMenu, setShowFilterMenu] = useState(false)
 
@@ -17,10 +20,10 @@ export default function Search() {
           </a>
         </div>
 
-        <SearchBar />
+        <SearchBar setQuery={props.setQuery} />
       </div>
       <div>
-        {showFilterMenu ? <FilterMenu /> : ''}
+        {showFilterMenu ? <FilterMenu setFilters={props.setFilters} /> : ''}
       </div>
     </>
   )
