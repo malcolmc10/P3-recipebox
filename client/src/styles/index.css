@@ -1,0 +1,61 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Custom CSS */
+
+body::after{
+  content: '';
+  background-image: url('./assets/pattern_background.png');
+  background-repeat: repeat;
+  background-size: 112px 112px;
+  height: 100vh;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+@responsive{
+.h-500px{
+  height:500px
+}
+.h-250px{
+  height: 250px
+}
+.mx-4-perc{
+  margin-right: 4%;
+  margin-left: 4%
+
+}
+}
+
+/* Filter Menu */
+.filter-headline{
+  position: relative;
+}
+.filter-headline::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #65BCCF;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 639px) {
+  .filter-headline::after{
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
