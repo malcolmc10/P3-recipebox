@@ -5,7 +5,8 @@ const router = Router()
 
 
 //* Search
-router.get("/recipes/filter", control.filter)
+// router.get("/recipes/filter", control.filter)
+router.get("/recipes/search", control.search)
 
 //* Recipes
 router.get("/recipes", control.getRecipes)
