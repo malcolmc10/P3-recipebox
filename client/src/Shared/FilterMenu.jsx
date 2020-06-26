@@ -99,18 +99,18 @@ export default function FilterMenu(props) {
             </li>
 
             <li className="py-1 flex justify-center sm:justify-start">
-              <input className="w-4 h-4 self-center" type="checkbox" name="indian" onChange={handleChange} />
-              <label htmlFor="indian" className="ml-2">Italian</label>
+              <input className="w-4 h-4 self-center" type="checkbox" name="italian" onChange={handleChange} />
+              <label htmlFor="italian" className="ml-2">Italian</label>
             </li>
 
             <li className="py-1 flex justify-center sm:justify-start">
-              <input className="w-4 h-4 self-center" type="checkbox" name="indian" onChange={handleChange} />
-              <label htmlFor="indian" className="ml-2">Canadian</label>
+              <input className="w-4 h-4 self-center" type="checkbox" name="canadian" onChange={handleChange} />
+              <label htmlFor="canadian" className="ml-2">Canadian</label>
             </li>
 
             <li className="py-1 flex justify-center sm:justify-start">
-              <input className="w-4 h-4 self-center" type="checkbox" name="indian" onChange={handleChange} />
-              <label htmlFor="indian" className="ml-2">Mexican</label>
+              <input className="w-4 h-4 self-center" type="checkbox" name="mexican" onChange={handleChange} />
+              <label htmlFor="mexican" className="ml-2">Mexican</label>
             </li>
           </ul>
         </div>
