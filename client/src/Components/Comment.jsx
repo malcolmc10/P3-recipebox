@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { updateRecipe, updateComment, deleteComment } from "../Services/recipes"
+import { updateComment, deleteComment } from "../Services/recipes"
 
 export default function Comment(props) {
 
@@ -32,18 +32,16 @@ export default function Comment(props) {
     cloneRecipe.comments[index] = comment
     cloneRecipe.comments.reverse()
     setRecipe(cloneRecipe)
-    // updateRecipe(recipe._id, cloneRecipe)
     updateComment(recipe._id, _id, comment)
-
     setClick(!isClicked)
   }
 
   const removeComment = () => {
+    deleteComment(recipe._id, _id)
     const cloneRecipe = { ...recipe }
     cloneRecipe.comments.splice(index, 1)
     cloneRecipe.comments.reverse()
     setRecipe(cloneRecipe)
-    deleteComment(recipe._id, _id)
   }
 
   return (
@@ -51,22 +49,14 @@ export default function Comment(props) {
 
       <h4><b>{commentAuthor}</b></h4>
 
-      {isClicked ? <textarea class="h-full border border-gray-400 rounded-lg py-2 px-4 mb-4 block w-full appearance-none" value={comment.commentDetails} name="commentDetails" id='content' onChange={handleChange}></textarea> : <p>{commentDetails}</p>}
+      {isClicked ? <textarea className="h-full border border-gray-400 rounded-lg py-2 px-4 mb-4 block w-full appearance-none" value={comment.commentDetails} name="commentDetails" id='content' onChange={handleChange}></textarea> : <p>{commentDetails}</p>}
 
       <p className="text-sm text-gray-500"><i>{commentTime}</i></p>
 
-      {isClicked ?
-        <button class="bg-green-300 hover:bg-green-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" onClick={handleSubmitClick} type="button">
-          Submit
-      </button> :
-        <button className="bg-blue-200 rounded-full py-1 px-5 mr-2 outline-none focus:outline-none focus:shadow-outline" onClick={handleEditClick} type="button">
-          Edit
-      </button>}
+      {isClicked ? <button className="bg-green-300 hover:bg-green-600 text-white m-3 py-2 px-5 rounded focus:outline-none focus:shadow-outline" onClick={handleSubmitClick} type="button"> Submit </button> : <button className="bg-blue-200 rounded-full py-1 px-5 mr-2 outline-none focus:outline-none focus:shadow-outline" onClick={handleEditClick} type="button"> Edit </button>}
 
-      <button class="bg-blue-200 rounded-full py-1 px-5 outline-none focus:outline-none focus:shadow-outline" onClick={removeComment} type="button" >
-        Delete
-      </button>
-
+      <button className="bg-blue-200 rounded-full py-1 px-5 outline-none focus:outline-none focus:shadow-outline" onClick={removeComment} type="button"> Delete </button>
+      
     </div>
   )
 }

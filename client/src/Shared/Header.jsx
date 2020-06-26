@@ -48,7 +48,7 @@ export default function Header(props) {
 
         <li>
           <button onClick={() => setShowSearch(showSearch => !showSearch)}>
-            <img src={showSearch ? closeIcon : searchIcon} alt="search icon" class="w-4" />
+            <img src={showSearch ? closeIcon : searchIcon} alt="search icon" className="w-4" />
           </button>
         </li>
 

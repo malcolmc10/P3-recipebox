@@ -1,5 +1,5 @@
 import React, { useState, } from 'react'
-import _ from 'underscore' // It's !Joke
+import _ from 'underscore' //* It's !Joke
 import { useHistory } from 'react-router-dom'
 
 
@@ -8,7 +8,7 @@ export default function FilterMenu(props) {
 
   const [filters, setFilters] = useState({})
 
-  let history = useHistory();
+  let history = useHistory()
 
   const handleApply = () => {
     history.push('/results')

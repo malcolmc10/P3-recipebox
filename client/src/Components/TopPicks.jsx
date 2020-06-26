@@ -18,7 +18,7 @@ export default function TopPicks() {
       <h2 className="text-3xl sm:text-5xl text-center text-orange-500">Top Picks</h2>
       <div className="flex flex-wrap justify-evenly">
 
-        {recipes && recipes.map((recipe) => <Recipe recipe={recipe} />)}
+        {recipes && recipes.map((recipe, i) => <Recipe recipe={recipe} key={i}/>)}
 
       </div>
     </div>

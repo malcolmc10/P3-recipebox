@@ -62,7 +62,7 @@ export const search = async (search) => {
         filters: search.filters
       }
     })
-    // const response = await api.get('/recipes/search', search)
+    //* const response = await api.get('/recipes/search', search)
     return response.data
   } catch (error) {
     throw error
@@ -72,8 +72,6 @@ export const search = async (search) => {
 export const addComment = async (id, comment) => {
   try {
     const response = await api.post(`/recipes/${id}/comments`, comment)
-    console.log(id, comment)
-    console.log(response.data)
     return response.data
   } catch (error) {
     throw error
